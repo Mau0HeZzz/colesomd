@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -27,12 +27,12 @@ import "../../scss/base/swiper.scss";
 function initSliders() {
 	// Перечень слайдеров
 	// Проверяем, есть ли слайдер на стронице
-	if (document.querySelector('.swiper')) { // Указываем скласс нужного слайдера
+	if (document.querySelector('.slider-hero')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
 		new Swiper('.swiper', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation],
+			modules: [Navigation, Pagination, Autoplay],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 1,
@@ -42,26 +42,24 @@ function initSliders() {
 
 			//touchRatio: 0,
 			//simulateTouch: false,
-			//loop: true,
+			// loop: true,
 			//preloadImages: false,
 			//lazy: true,
 
 			/*
 			// Эффекты
 			effect: 'fade',
+			*/
 			autoplay: {
 				delay: 3000,
 				disableOnInteraction: false,
 			},
-			*/
 
 			// Пагинация
-			/*
 			pagination: {
-				el: '.swiper-pagination',
+				el: '.slider-hero__pagination',
 				clickable: true,
 			},
-			*/
 
 			// Скроллбар
 			/*
@@ -73,8 +71,8 @@ function initSliders() {
 
 			// Кнопки "влево/вправо"
 			navigation: {
-				prevEl: '.swiper-button-prev',
-				nextEl: '.swiper-button-next',
+				prevEl: '.slider-hero__arrow_prev',
+				nextEl: '.slider-hero__arrow_next',
 			},
 
 			// Брейкпоинты
@@ -101,7 +99,14 @@ function initSliders() {
 			*/
 			// События
 			on: {
-
+				init: function (swiper) {
+					const allSlides = document.querySelector('.slider-hero__all');
+					allSlides.innerHTML = swiper.slides.length;
+				},
+				slideChange: function (swiper) {
+					const currentSlide = document.querySelector('.slider-hero__actual');
+					currentSlide.innerHTML = swiper.activeIndex+1;
+				}
 			}
 		});
 	}

@@ -8,7 +8,7 @@
 }
 // Спойлер
 .spollers__item {
-	font-size: rem(20);
+	font-size: $fontSize;
 }
 // Заголовок спойлера
 .spollers__title {
@@ -17,6 +17,7 @@
 	text-align: left;
 	border: 1px solid #eee;
 	padding: rem(10) rem(15);
+	padding-right: rem(35);
 	border-radius: rem(5);
 	position: relative;
 	._spoller-init & {
@@ -27,10 +28,10 @@
 			position: absolute;
 			right: 10px;
 			top: 50%;
-			background-color: #000;
+			background-color: #fff;
 			height: 2px;
-			width: 15px;
-			transition: transform 0.5s ease 0s;
+			width: 7px;
+			transition: all 0.3s ease 0s;
 		}
 		&::before {
 			transform: translate(-75%, -50%) rotate(40deg);

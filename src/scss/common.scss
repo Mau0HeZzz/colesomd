@@ -1,1 +1,85 @@
 // Заголовки, общие БЄМ блоки и проче...
+.action {
+  background-color: #F5E0DF;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(13);
+    overflow: hidden;
+    max-height: rem(50);
+    overflow: hidden;
+  }
+
+  &__image {
+    @include adaptiveValue("flex-basis", 125, 70);
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: rem(80);
+    background: url(../img/saturday.png) center no-repeat;
+    background-size: cover;
+    @media (max-width:$mobile){
+      background-size: contain; 
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @include adaptiveValue("gap", 10, 5);
+    @include adaptiveValue("font-size", 16, 10);
+    color: #292626;
+    font-weight: 700;
+    padding-top: rem(13);
+    padding-bottom: rem(13);
+    line-height: 1.5;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    text-decoration: underline !important;
+    color: $red;
+    @media (any-hover: hover){
+      &:hover{
+        text-decoration: none !important;
+      }
+    }
+  }
+}
+
+._dn-md3 {
+  @media (max-width:$mobile){
+      display: none;
+  }
+}
+
+._tr-md3 {
+  @media (max-width:$mobile){
+    transform: scaleX(0);
+  }
+}
+
+input {
+  border-radius: rem(6);
+  font-size: rem(16);
+  padding: rem(13) rem(20);
+  transition: all 0.3s ease 0s;
+  transform-origin: right center;
+  @media (max-width:$mobile){
+    padding: rem(4) rem(8);
+  }
+  &._form-error {
+	  box-shadow: inset 0px 0px 7px 0px $red;
+  }
+}
+
+
+[class*="_icon-"] {
+  font-size: rem(21);
+}
+
+._footer-gray {
+  color: #999;
+}

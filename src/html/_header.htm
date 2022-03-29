@@ -1,4 +1,105 @@
 <header class="header">
-	<div class="header__container">
+	<div class="header_container">
+		<div class="header__top top-header">
+			<div class="top-header__container">
+				<div class="top-header__logo logo-header">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<img src="@img/logo.svg" alt="logo" class="logo-header__image">
+					<div class="logo-header__text">Импортер <br> шин №1</div>
+				</div>
+				<div class="menu__close"></div>
+				<div class="top-header__menu menu">
+					<div class="menu__logo logo-header">
+						<img src="@img/logo.svg" alt="logo" class="logo-header__image">
+						<div class="logo-header__text">Импортер <br> шин №1</div>
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item menu__item_language">Выберите язык:</li>
+							<li class="menu__item"><a href="#" class="menu__link @@1">Скидки</a></li>
+							<li class="menu__item"><a href="#" class="menu__link @@2">О компании</a></li>
+							<li class="menu__item"><a href="#" class="menu__link @@3">Вакансии</a></li>
+							<li class="menu__item"><a href="#" class="menu__link @@4">Новости</a></li>
+							<li class="menu__item"><a href="#" class="menu__link @@5">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="menu__call call-menu">
+						<div class="call-menu__span">Не дозвонились?</div>
+						<a href="#" data-goto=".footer__form" class="call-menu__link">Мы вам перезвоним!</a>
+					</div>
+				</div>
+				<div class="top-header__lang lang-header">
+					<ul data-da=".menu__item_language, 767" class="lang-header__list">
+						<li class="lang-header__item"><a href="#" class="lang-header__link lang-header__link_active">Ru</a></li>
+						<li class="lang-header__item"><a href="#" class="lang-header__link">Ro</a></li>
+						<li class="lang-header__item"><a href="#" class="lang-header__link">EN</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom bottom-header">
+			<div class="bottom-header__container">
+				<div data-popup="#catalog-popup" class="bottom-header__catalog catalog-header">
+					<div class="catalog-header__dotts">
+						<img src="@img/header/dotts.svg" alt="dotts">
+					</div>
+					<spam class="catalog-header__text">Каталог</spam>
+				</div>
+				<div data-da=".top-header__container, 767, 2" class="bottom-header__search search-header">
+					<input placeholder="Поиск..." type="text" class="search-header__input _tr-md3">
+					<span class="search-header__icon _icon-search"></span>
+				</div>
+				<div class="bottom-header__actions actions-header">
+					<div class="actions-header__phones phones-header">
+						<div data-spollers class="spollers phones-header__spollers">
+							<div class="spollers__item">
+								<button type="button" data-spoller data-spoller-close class="spollers__title"><span class="_icon-phone"></span></button>
+								<div class="spollers__body">
+									<div class="phones-header__items">
+										<ul data-da=".menu, 767, 2" class="phones-header__list">
+											<li class="phones-header__item">
+												<a href="tel:060 136 333" class="phones-header__phone phone-header">
+													<span class="phone-header__icon _icon-phone"></span>
+													<span class="phone-header__number">060 136 333</span>
+												</a>
+											</li>
+											<li class="phones-header__item">
+												<a href="tel:068 607 545" class="phones-header__phone phone-header">
+													<span class="phone-header__icon _icon-phone"></span>
+													<span class="phone-header__number">068 607 545</span>
+												</a>
+												<a href="#" class="phone-header__social">
+													<img src="@img/header/whatsapp.svg" alt="whatsapp">
+												</a>
+												<a href="#" class="phone-header__social">
+													<img src="@img/header/viber.svg" alt="viber">
+												</a>
+											</li>
+											<li class="phones-header__item">
+												<a href="tel:069 407 137" class="phones-header__phone phone-header">
+													<span class="phone-header__icon _icon-phone"></span>
+													<span class="phone-header__number">069 407 137</span>
+												</a>
+											</li>
+											<li class="phones-header__item">
+												<a href="tel:022407546" class="phones-header__phone phone-header">
+													<span class="phone-header__icon _icon-phone"></span>
+													<span class="phone-header__number">022 407 546</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" data-da=".top-header__container, 767" class="actions-header__cart cart-header">
+						<div class="cart-header__icon _icon-cart"></div>
+						<span class="cart-header__number">1</span>
+					</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </header>

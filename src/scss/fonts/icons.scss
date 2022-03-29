@@ -14,3 +14,36 @@
 		display: block;
 	}
 }
+
+
+._icon-cart:before {
+  content: "\e900";
+}
+._icon-heart:before {
+  content: "\e901";
+}
+._icon-phone:before {
+  content: "\e902";
+}
+._icon-p-left:before {
+  content: "\e903";
+}
+._icon-p-right:before {
+  content: "\e904";
+}
+._icon-scales:before {
+  content: "\e905";
+}
+._icon-seall_arrow:before {
+  content: "\e906";
+}
+._icon-search:before {
+  content: "\e907";
+}
+._icon-snow:before {
+  content: "\e908";
+}
+._icon-sun:before {
+  content: "\e909";
+}
+

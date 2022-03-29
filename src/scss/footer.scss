@@ -1,3 +1,332 @@
 //====================================================================================================
+.footer {
+
+  &__form {
+  }
+
+  &__body {
+  }
+}
+.form-footer {
+  background-color: #322F2F;
+  color: #fff;
+
+  &__container {
+    @include adaptiveValue("padding-top", 60, 35);
+    @include adaptiveValue("padding-bottom", 60, 35);
+    display: flex;
+    align-items: center;
+    @include adaptiveValue("gap", 100, 20);
+    @media (max-width:$tablet){
+      flex-direction: column;
+    }
+  }
+
+  &__image {
+    @include adaptiveValue("width", 112, 60);
+    @include adaptiveValue("flex-basis", 112, 60);
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    @media (max-width:$mobile){
+      width: 100%; 
+    }
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+    &:not(:last-child) {margin-bottom: rem(25);}
+    @media (max-width:$tablet){
+      text-align: center;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    line-height: 1.4;
+    @include adaptiveValue("font-size", 24, 16);
+  }
+
+  &__subtitle {
+    @include adaptiveValue("font-size", 16, 12);
+  }
+
+  &__body {
+    display: flex;
+    justify-content: center;
+    gap: rem(20);
+    @media (min-width:$tablet){
+      flex-wrap: wrap;
+    }
+    @media (max-width:$tablet){
+      flex-direction: column;
+    }
+  }
+
+  &__inputs {
+    display: flex;
+    justify-content: center;
+    gap: rem(20);
+    @media (max-width:$mobile){
+      flex-direction: column; 
+    }
+  }
+
+  &__input {
+    width: 100%;
+    @media (max-width:$mobile){
+      padding: rem(13) rem(20); 
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+    padding: rem(13) rem(26);
+    border-radius: rem(6);
+    background-color: $red;
+    font-weight: 700;
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover){
+      &:hover{
+        background-color: #bd1206;
+      }
+    }
+    @media (max-width:$mobile){
+      width: 100%; 
+    }
+  }
+}
+.body-footer {
+  background-color: $mainColor;
+  color: #fff;
+  @include adaptiveValue("font-size", 14, 12);
+  a {
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover){
+      &:hover{
+        color: $red;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__top {
+    @include adaptiveValue("padding-top", 100, 40);
+    @include adaptiveValue("padding-bottom", 70, 40);
+    display: flex;
+    @include adaptiveValue("gap", 90, 30);
+    @media (max-width:$pc){
+      flex-direction: column; 
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: rem(20);
+    row-gap: rem(30);
+    flex: 1 1 auto;
+    justify-content: space-between;
+  }
+
+  &__col {
+    flex: 0 1 calc(50% - rem(30));
+    @media (min-width:$mobile){
+      flex: 0 0 calc(25% - rem(30));
+    }
+    display: flex;
+    flex-direction: column;
+
+    &_first {
+      display: flex;
+      flex-direction: column;
+      flex: 0 0 auto;
+    }
+  }
+
+  &__mid {
+  }
+
+  &__bot {
+  }
+}
+.first-footer {
+  display: flex;
+  @include adaptiveValue("gap", 24, 12);
+  @media (max-width:$pc){
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    @include adaptiveValue("flex-basis", 150, 120, 1240, 320, 0);
+    img {
+      width: 100%;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: rem(11);
+  }
+
+  &__time {
+  }
+
+  &__socials {
+  }
+}
+.phone-footer {
+
+  &__icon {
+    font-size: rem(21);
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__phone {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 20, 16);
+  }
+
+  &__label {
+  }
+}
+.time-footer {
+  display: flex;
+  flex-direction: column;
+  gap: rem(10);
+
+  &__title {
+    font-size: rem(16);
+    font-weight: 700;
+  }
+
+  &__row {
+  }
+}
+.socials-footer {
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+
+  &__item {
+    background-color: #fff;
+    border-radius: 50%;
+    flex: 0 1 rem(30);
+    img {
+      width: 100%;
+    }
+  }
+}
+.col-footer {
+
+  &__title {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 18, 14);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 24, 10);
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+  }
+
+  &__item {
+    @include adaptiveValue("font-size", 16, 12);
+  }
+}
+.mid-footer {
+  @include adaptiveValue("padding-top", 40, 20);
+  @include adaptiveValue("padding-bottom", 40, 20);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  border-top: rem(1) solid #999;
+  border-bottom: rem(1) solid #999;
+
+  &__title {
+    background-color: $mainColor;
+    @include adaptiveValue("padding-right", 25, 15);
+    @media (max-width:$tablet){
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__body {
+    @include adaptiveValue("padding-right", 150, 0);
+  }
+
+  &__list {
+    display: flex;
+    @include adaptiveValue("column-gap", 30, 15);
+    @media (max-width:$mobile){
+      row-gap: rem(5); 
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+  }
+
+  &__link {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 16, 12);
+  }
+}
+.bot-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include adaptiveValue("padding-top", 70, 30);
+  @include adaptiveValue("padding-bottom", 70, 30);
+  @media (max-width:$mobileSmall){
+    flex-direction: column; 
+    gap: rem(15);
+  }
+
+  &__copy {
+    text-align: center;
+  }
+
+  &__payments {
+  }
+}
+.payments-footer {
+  display: flex;
+  align-items: center;
+  gap: rem(15);
+
+  &__title {
+  }
+
+  &__item {
+    display: flex;
+    justify-content:center;align-items: center;
+  }
+}
 
 //====================================================================================================
+
