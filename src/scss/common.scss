@@ -49,6 +49,14 @@
   }
 }
 
+._dn {
+  display: none;
+}
+
+._op0 {
+  opacity: 0;
+}
+
 ._dn-md3 {
   @media (max-width:$mobile){
       display: none;
