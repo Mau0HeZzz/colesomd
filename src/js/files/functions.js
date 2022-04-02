@@ -223,7 +223,7 @@ export function spollers() {
 				spollerTitles.forEach(spollerTitle => {
 					if (hideSpollerBody) {
 						spollerTitle.removeAttribute('tabindex');
-						if (!spollerTitle.classList.contains('_spoller-active')) {
+						if (!spollerTitle.classList.contains('_spoller-active') && spollerTitle.nextElementSibling) {
 							spollerTitle.nextElementSibling.hidden = true;
 						}
 					} else {

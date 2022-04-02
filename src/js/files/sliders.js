@@ -193,9 +193,14 @@ function initSliders() {
 			}
 		});
 	}
-	if (document.querySelector('.body-videoslider__slider')) { // Указываем скласс нужного слайдера
-		// Создаем слайдер
-		new Swiper('.body-videoslider__slider', { // Указываем скласс нужного слайдера
+	const videoSliders = document.querySelectorAll('.body-videoslider');
+	if (videoSliders.length) {
+		videoSliders.forEach(e => {
+			let videoSlider = e.querySelector('.body-videoslider__slider');
+			let videoArrowPrev = e.querySelector('.body-homeslider__arrow_prev');
+			let videoArrowNext = e.querySelector('.body-homeslider__arrow_next');
+			
+		new Swiper(videoSlider, { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Navigation, Autoplay],
@@ -237,8 +242,8 @@ function initSliders() {
 
 			// Кнопки "влево/вправо"
 			navigation: {
-				prevEl: '.body-homeslider__arrow_prev',
-				nextEl: '.body-homeslider__arrow_next',
+				prevEl: videoArrowPrev,
+				nextEl: videoArrowNext,
 			},
 
 			// Брейкпоинты
@@ -268,6 +273,7 @@ function initSliders() {
 			on: {
 			}
 		});
+		})
 	}
 }
 // Скролл на базе слайдера (по классу swiper_scroll для оболочки слайдера)

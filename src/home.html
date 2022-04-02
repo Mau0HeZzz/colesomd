@@ -542,10 +542,91 @@
 						</div>
 					</div>
 				</section>
+				<section class="news">
+					<div class="news__container">
+						<div class="homeslider__head head-homeslider">
+							<div class="head-homeslider__left">
+								<div class="head-homeslider__icon">
+									<img src="@img/home/video.svg" alt="news.svg">
+								</div>
+								<div class="head-homeslider__title">Новости и акции</div>
+							</div>
+							<a href="#" class="head-homeslider__seall">
+								<div>
+									Посмотреть
+								</div>
+								все
+								<span class="_icon-seall_arrow"></span>
+							</a>
+						</div>
+						<div class="news__body body-videoslider">
+							<div class="body-videoslider__slider swiper">
+								<div class="body-videoslider__wrapper swiper-wrapper">
+									<a href="#" class="body-videoslider__slide slide-videoslider swiper-slide">
+										<div class="slide-videoslider__media">
+											<img class="news__image" src="@img/home/news_1.png" alt="#">
+										</div>
+										<div class="slide-videoslider__text">
+											<div class="slide-videoslider__date">21.12.2021</div>
+											<div class="slide-videoslider__name">Новогодние подарки от COLESO.MD.</div>
+											<div class="slide-videoslider__label">
+												Команда COLESO.MD на Новый год подготовила для вас праздничные подарки! Широкий выбор товаров и цен, которые обязательно вызовут у вас улыбку.
+											</div>
+										</div>
+									</a>
+									<a href="#" class="body-videoslider__slide slide-videoslider swiper-slide">
+										<div class="slide-videoslider__media">
+											<img class="news__image" src="@img/home/news_2.png" alt="#">
+										</div>
+										<div class="slide-videoslider__text">
+											<div class="slide-videoslider__date">15.11.2021</div>
+											<div class="slide-videoslider__name">BLACK WEEK 2021 в Coleso.MD!</div>
+											<div class="slide-videoslider__label">
+												Дорогие друзья, мы для вас подготовили супер цены, чтобы вы смогли купить все, о чем мечтали для себя, и своих близких!
+											</div>
+										</div>
+									</a>
+									<a href="#" class="body-videoslider__slide slide-videoslider swiper-slide">
+										<div class="slide-videoslider__media">
+											<img class="news__image" src="@img/home/news_3.png" alt="#">
+										</div>
+										<div class="slide-videoslider__text">
+											<div class="slide-videoslider__date">21.10.2021</div>
+											<div class="slide-videoslider__name">COLESO.MD расширяет свой график работы!</div>
+											<div class="slide-videoslider__label">
+												COLESO.MD расширяет свой график работы, в период сезонной замены шин 2021. 
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="body-homeslider__navigation">
+									<div class="body-homeslider__arrow body-homeslider__arrow_prev">
+										<img src="@img/icons/p-left.svg" alt="arrow">
+									</div>
+									<div class="body-homeslider__arrow body-homeslider__arrow_next">
+										<img src="@img/icons/p-right.svg" alt="arrow">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="about">
+					<div class="about__container">
+						<h2 class="about__title">COLESO.MD – крупнейшая сеть автомагазинов в Молдове</h2>
+						<p class="about__subtitle">Компания "Eximotor SA" — мультибрендовая компания ориентированная на нужды клиента.</p>
+						<div class="about__text">
+							<p class="about__gray">Компания появилась на рынке 27 лeт нaзaд. Зa этo вpemя нaшa komaндa oтkpылa 35 магазинов COLESO MD пo вceй Молдове и ycпeлa coздaть moщный и быcтpo paбoтaющий интepнeт-maгaзин.</p>
+							<p class="about__gray">Сегодня интернет магазин и сеть автомагазинов COLESO MD – oднa из лидиpyющиx тopгoвыx ceтeй в Молдове. В ассортименте бренда COLESO MD представлено более 80 000 товаров.</p>
+							<p class="about__gray">Компания "Eximotor SA " импортирует продукцию из таких стран как: Россия, Белоруссия, Англия , Германия, Китай,  Польша, Сербия, Индия, Япония, Южная Корея. При этом мы всегда находимся в поиске новых поставщиков и продукции, что позволяет гарантировать высокое качество обслуживания, и приемлемые цены для наших клиентов.Рыночная политика нашей компании основывается на обеспечении оптимальной гаммы товаров и услуг, уважении интересов клиентов на всей территории  страны, а также на предоставлении выгодных условий сотрудничества нашим партнерам.</p>
+							<a href="#" class="about__more">Читать далее</a>
+						</div>
+					</div>
+				</section>
 			</main>
 			@@include('html/_footer.htm',{})
+			@@include('html/_uparrow.htm',{})
 		</div>
-		@@include('html/_popup.htm',{})
 		@@include('html/_catalog_popup.htm',{})
 		@@include('html/_js.htm',{})
 	</body>

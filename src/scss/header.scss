@@ -1,6 +1,14 @@
 //====================================================================================================
 .header {
 
+	.popup-show & {
+		position: relative;
+		background-color: #fff;
+		@media (min-width:$mobile){
+			z-index: 99999;
+		}
+	}
+
 	&__container {
 	}
 

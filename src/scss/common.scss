@@ -1,6 +1,12 @@
 // Заголовки, общие БЄМ блоки и проче...
 .action {
   background-color: #F5E0DF;
+	.popup-show & {
+		position: relative;
+    @media (min-width:$mobile){
+      z-index: 99999;
+    }
+	}
 
   &__container {
     display: flex;
@@ -90,4 +96,103 @@ input {
 
 ._footer-gray {
   color: #999;
+}
+
+.uparrow {
+  position: fixed;
+  border-radius: 50%;
+  width: rem(50);
+  height: rem(50);
+  background-color: #221F1F;
+  right: percent(100,1600);
+  bottom: percent(100,1600);
+  display: flex;
+  justify-content:center;align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  &._hide {
+    pointer-events: none;
+    transform: translateY(rem(100));
+    opacity: 0;
+  }
+
+  &__arrow {
+    display: flex;
+    justify-content:center;align-items: center;
+  }
+}
+
+.breadcumps {
+
+  &__container {
+    @include adaptiveValue("padding-top", 40, 18);
+    @include adaptiveValue("padding-bottom", 10, 1.5);
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    @media (min-width:$mobile){
+      gap: rem(10); 
+    }
+  }
+
+  &__item {
+    color: #999;
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+    transition: color 0.3s ease 0s;
+    font-size: rem(16);
+    @media (any-hover: hover){
+      &:hover{
+        color: $red !important;
+      }
+    }
+    @media (max-width:$mobile){
+      display: none;
+    }
+    &::before{
+      content:'';
+      display: block;
+      background-image: url(../img/icons/seall_arrow.svg);
+      background-size: contain;
+      width: rem(5);
+      height: rem(10);
+    }
+    &:first-child {
+      color: $mainColor;
+      display: flex !important;
+      &::before{
+        display: block;
+        transform: rotate(180deg);
+        @media (min-width:$mobile){
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.pagehead {
+  &:not(:last-child) {
+    @include adaptiveValue("margin-bottom", 45, 15);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    @include adaptiveValue("gap", 20, 10);
+  }
+
+  &__title {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 40, 20);
+  }
+
+  &__quantity {
+    line-height: 1;
+    color: #999;
+    font-size: rem(16);
+  }
 }

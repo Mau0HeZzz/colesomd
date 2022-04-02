@@ -1,0 +1,270 @@
+.seasons {
+
+  &__head {
+    &:not(:last-child) {margin-bottom: rem(15);}
+  }
+
+  &__title {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 16, 14);
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    @include adaptiveValue("gap", 20, 10);
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 auto;
+    transition: all 0.3s ease 0s;
+    padding-left: rem(20);
+    @include adaptiveValue("max-height", 90, 70);
+    @media (any-hover: hover){
+      &:hover{
+        background-color: #FFF0F0;
+        .seasons__text {
+          color: $red;
+        }
+      }
+    }
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    gap: rem(15);
+  }
+
+  &__icon {
+  }
+
+  &__text {
+    transition: all 0.3s ease 0s;
+    @include adaptiveValue("font-size", 16, 14);
+  }
+
+  &__image {
+    height: 100%;
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+//========================================================================================================================================================
+.popular {
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:not(:last-child) {margin-bottom: rem(15);}
+    gap: rem(10);
+    @media (max-width:$mobileSmall){
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+    flex: 1 1 auto;
+    .popular_electro & {
+      @include adaptiveValue("font-size", 24, 16);
+    }
+  }
+
+  &__icon {
+    flex: 0 0 rem(32);
+    height: rem(32);
+    display: flex;
+    justify-content:center;align-items: center;
+    border-radius: 50%;
+    img {
+      width: 100%;
+    }
+    &_red {
+      background-color: #FFF0F0;
+      color: $red;
+      img {
+        max-width: 50%;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 16, 14);
+    .about & {
+      font-weight: normal;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: rem(10);
+    &_city {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(rem(140), 1fr));
+    }
+    &_tires {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      @media (min-width:$mobileSmall){
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  &__item {
+    padding: rem(7) rem(19);
+    border-radius: rem(6);
+    border: rem(1) solid $gray;
+    transition: all 0.3s ease 0s;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content:center;align-items: center;
+    @media (any-hover: hover){
+      &:hover{
+        background-color: #FFF0F0;
+        border-color: $red;
+        color: $red;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__list {
+  }
+
+  &__li {
+    &::before {
+      content: "\2022";
+      color: $red;
+      font-weight: bold;
+      display: inline-block; 
+      width: rem(8);
+      margin-left: rem(-8);
+      float: left;
+      margin-right: rem(10);
+      .popular__list_ben & {
+        background-color: #FFF0F0;
+        width: rem(32);
+        flex: 0 0 rem(32);
+        height: rem(32);
+        border-radius: 50%;
+        content: '';
+      }
+    }
+    &_time {
+      &::before{
+        background-image: url(../img/catalog/about_time.svg);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    &_money {
+      &::before{
+        background-image: url(../img/catalog/about_money.svg);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    &_eco {
+      &::before{
+        background-image: url(../img/catalog/about_eco.svg);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+}
+
+.li-popular {
+  display: flex;
+  gap: rem(10);
+  @include adaptiveValue("font-size", 16, 12);
+  &:not(:last-child) {
+    margin-bottom: rem(20);
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+
+  &__text {
+  }
+}
+
+
+//========================================================================================================================================================
+
+
+.city-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: none;
+  gap: rem(7);
+  background-color: #f6f6f6;
+  .about & {
+    gap: rem(10);
+  }
+  @media (any-hover: hover){
+    &:hover{
+      .city-item__icon  {
+        color: $red;
+      }
+    }
+  }
+
+  &__icon {
+    color: #CBCBCB;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    justify-content:center;align-items: center;
+    .about & {
+      flex: 0 0 rem(32);
+      height: rem(32);
+      background-color: #FFF0F0;
+      border-radius: 50%;
+    }
+    &_dot {
+      .about & {
+        flex: 0 0 rem(8);
+        height: rem(8);
+        background-color: $red;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__name {
+    font-size: rem(13);
+    .popular__body_about & {
+      white-space: nowrap;
+    }
+    .about & {
+      @include adaptiveValue("font-size", 16, 12);
+    }
+  }
+}
