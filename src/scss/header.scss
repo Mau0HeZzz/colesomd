@@ -354,6 +354,17 @@
 				border: none;
 				outline: none;
 				transition: all 0.3s ease 0s;
+				&::before,
+				&::after{
+					background-color: #fff;
+				}
+				&._spoller-active {
+					color: $red;
+					&::before,
+					&::after{
+						background-color: $red;
+					}
+				}
 				@media (any-hover: hover){
 					&:hover{
 						color: $red;
@@ -371,6 +382,7 @@
 				right: 0;
 				background-color: #221F1F;
 				width: rem(220);
+				z-index: 2;
 			}
 	}
 	}

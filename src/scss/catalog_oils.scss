@@ -80,6 +80,9 @@
 .body-page {
 
   &__articles {
+    .page__body_jcb & {
+      @include adaptiveValue("padding-bottom", 130, 60);
+    }
   }
 }
 .articles {
@@ -136,8 +139,20 @@
     display: flex;
     gap: rem(15);
     opacity: 0.5;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover){
+      &:hover{
+        color: $red;
+        font-weight: 700;
+        .page__body_jcb & {
+          color: #FCAF26;
+        }
+      }
+    }
     &_active {
       opacity: 1;
+      pointer-events: all;
     }
   }
 
@@ -148,8 +163,19 @@
   }
 
   &__item {
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover){
+      &:hover{
+        color: $red;
+        font-weight: 700;
+        .page__body_jcb & {
+          color: #FCAF26;
+        }
+      }
+    }
     &_active {
       font-weight: 700;
+      pointer-events: none;
     }
   }
 }

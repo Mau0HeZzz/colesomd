@@ -24,10 +24,7 @@
     flex-shrink: 0;
     height: rem(80);
     background: url(../img/saturday.png) center no-repeat;
-    background-size: cover;
-    @media (max-width:$mobile){
-      background-size: contain; 
-    }
+    background-size: contain !important;
   }
 
   &__text {

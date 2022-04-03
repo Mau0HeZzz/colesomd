@@ -64,6 +64,18 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   }
+  const jcbVideoContainers = document.querySelectorAll('.video-benefits');
+  if (jcbVideoContainers.length) {
+    jcbVideoContainers.forEach(e => {
+      let video = e.querySelector('.video-benefits__media video');
+      let videoControl = e.querySelector('.video-benefits__contor');
+      if (videoControl) {
+        videoControl.addEventListener('click', () => {
+          videoControls(video, videoControl);
+        })
+      }
+    })
+  }
   const uparrow = document.querySelector('.uparrow');
   if (uparrow) {
     const offsY = uparrow.dataset.onscroll;
