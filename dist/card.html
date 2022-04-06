@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Карточка товара</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220406110928">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<section class="action">
+			<div class="action__container">
+				<div class="action__image">
+				</div>
+				<span class="action__text">В период сезонной замены шин <a href="#" class="action__link">Рабочая суббота</a>c 9:00 до 17:30</span>
+			</div>
+		</section>
+		<header class="header">
+			<div class="header_container">
+				<div class="header__top top-header">
+					<div class="top-header__container">
+						<div class="top-header__logo logo-header">
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+							<img src="img/logo.svg" alt="logo" class="logo-header__image">
+							<div class="logo-header__text">Импортер <br> шин №1</div>
+						</div>
+						<div class="menu__close"></div>
+						<div class="top-header__menu menu">
+							<div class="menu__logo logo-header">
+								<img src="img/logo.svg" alt="logo" class="logo-header__image">
+								<div class="logo-header__text">Импортер <br> шин №1</div>
+								<button type="button" class="menu__icon icon-menu"><span></span></button>
+							</div>
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item menu__item_language">Выберите язык:</li>
+									<li class="menu__item"><a href="#" class="menu__link menu__link_active">Скидки</a></li>
+									<li class="menu__item"><a href="#" class="menu__link ">О компании</a></li>
+									<li class="menu__item"><a href="#" class="menu__link ">Вакансии</a></li>
+									<li class="menu__item"><a href="#" class="menu__link ">Новости</a></li>
+									<li class="menu__item"><a href="#" class="menu__link ">Контакты</a></li>
+								</ul>
+							</nav>
+							<div class="menu__call call-menu">
+								<div class="call-menu__span">Не дозвонились?</div>
+								<a href="#" data-goto=".footer__form" class="call-menu__link">Мы вам перезвоним!</a>
+							</div>
+						</div>
+						<div class="top-header__lang lang-header">
+							<ul data-da=".menu__item_language, 767" class="lang-header__list">
+								<li class="lang-header__item"><a href="#" class="lang-header__link lang-header__link_active">Ru</a></li>
+								<li class="lang-header__item"><a href="#" class="lang-header__link">Ro</a></li>
+								<li class="lang-header__item"><a href="#" class="lang-header__link">EN</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="header__bottom bottom-header">
+					<div class="bottom-header__container">
+						<div data-popup="#catalog-popup" data-goto=".wrapper" class="bottom-header__catalog catalog-header">
+							<div class="catalog-header__dotts">
+								<img src="img/header/dotts.svg" alt="dotts">
+							</div>
+							<spam class="catalog-header__text">Каталог</spam>
+						</div>
+						<div data-da=".top-header__container, 767, 2" class="bottom-header__search search-header">
+							<input placeholder="Поиск..." type="text" class="search-header__input _tr-md3">
+							<span class="search-header__icon _icon-search"></span>
+						</div>
+						<div class="bottom-header__actions actions-header">
+							<div class="actions-header__phones phones-header">
+								<div data-spollers class="spollers phones-header__spollers">
+									<div class="spollers__item">
+										<button type="button" data-spoller data-spoller-close class="spollers__title"><span class="_icon-phone"></span></button>
+										<div class="spollers__body">
+											<div class="phones-header__items">
+												<ul data-da=".menu, 767, 2" class="phones-header__list">
+													<li class="phones-header__item">
+														<a href="tel:060 136 333" class="phones-header__phone phone-header">
+															<span class="phone-header__icon _icon-phone"></span>
+															<span class="phone-header__number">060 136 333</span>
+														</a>
+													</li>
+													<li class="phones-header__item">
+														<a href="tel:068 607 545" class="phones-header__phone phone-header">
+															<span class="phone-header__icon _icon-phone"></span>
+															<span class="phone-header__number">068 607 545</span>
+														</a>
+														<a href="#" class="phone-header__social">
+															<img src="img/header/whatsapp.svg" alt="whatsapp">
+														</a>
+														<a href="#" class="phone-header__social">
+															<img src="img/header/viber.svg" alt="viber">
+														</a>
+													</li>
+													<li class="phones-header__item">
+														<a href="tel:069 407 137" class="phones-header__phone phone-header">
+															<span class="phone-header__icon _icon-phone"></span>
+															<span class="phone-header__number">069 407 137</span>
+														</a>
+													</li>
+													<li class="phones-header__item">
+														<a href="tel:022407546" class="phones-header__phone phone-header">
+															<span class="phone-header__icon _icon-phone"></span>
+															<span class="phone-header__number">022 407 546</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<a href="#" data-da=".top-header__container, 767" class="actions-header__cart cart-header">
+								<div class="cart-header__icon _icon-cart"></div>
+								<span class="cart-header__number">1</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page page_product">
+			<section class="breadcumps">
+				<div class="breadcumps__container">
+					<div class="breadcumps__body">
+						<a href="#" class="breadcumps__item">Главная</a>
+						<a href="#" class="breadcumps__item">Шины</a>
+						<a href="#" class="breadcumps__item">Легковые</a>
+						<a href="#" class="breadcumps__item">Шины Pirelli S-Veas 215/65 R16 98H</a>
+					</div>
+				</div>
+			</section>
+			<section class="pagehead">
+				<div class="pagehead__container">
+					<h1 class="pagehead__title">Шины Pirelli S-Veas 215/65 R16 98H</h1>
+				</div>
+			</section>
+			<section class="product">
+				<div class="product__container">
+					<div class="product__slider slider-product">
+						<div class="slider-product__preview preview-product">
+							<div class="preview-product__slider swiper">
+								<div class="preview-product__wrapper swiper-wrapper">
+									<div class="preview-product__slide swiper-slide">
+										<picture><source srcset="img/product/slider_1.webp" type="image/webp"><img src="img/product/slider_1.png" alt="slide"></picture>
+									</div>
+									<div class="preview-product__slide swiper-slide">
+										<picture><source srcset="img/product/slider_2.webp" type="image/webp"><img src="img/product/slider_2.png" alt="slide"></picture>
+									</div>
+									<div class="preview-product__slide swiper-slide">
+										<picture><source srcset="img/product/slider_3.webp" type="image/webp"><img src="img/product/slider_3.png" alt="slide"></picture>
+									</div>
+									<div class="preview-product__slide swiper-slide">
+										<picture><source srcset="img/product/slider_4.webp" type="image/webp"><img src="img/product/slider_4.png" alt="slide"></picture>
+									</div>
+									<div class="preview-product__slide swiper-slide">
+										<picture><source srcset="img/product/slider_5.webp" type="image/webp"><img src="img/product/slider_5.png" alt="slide"></picture>
+									</div>
+									<div class="preview-product__slide swiper-slide">
+										<picture><source srcset="img/product/slider_3.webp" type="image/webp"><img src="img/product/slider_3.png" alt="slide"></picture>
+									</div>
+								</div>
+								<div class="preview-product__navigation">
+									<div class="preview-product__arrow preview-product__arrow_prev">
+										<img src="img/icons/seall_arrow.svg" alt="arrow">
+									</div>
+									<div class="preview-product__arrow preview-product__arrow_next">
+										<img src="img/icons/seall_arrow.svg" alt="arrow">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slider-product__main main-product">
+							<div class="main-product__slider swiper">
+								<div class="main-product__wrapper swiper-wrapper">
+									<div class="main-product__slide swiper-slide">
+										<picture><source srcset="img/product/slider_1.webp" type="image/webp"><img src="img/product/slider_1.png" alt="slide"></picture>
+									</div>
+									<div class="main-product__slide swiper-slide">
+										<picture><source srcset="img/product/slider_2.webp" type="image/webp"><img src="img/product/slider_2.png" alt="slide"></picture>
+									</div>
+									<div class="main-product__slide swiper-slide">
+										<picture><source srcset="img/product/slider_3.webp" type="image/webp"><img src="img/product/slider_3.png" alt="slide"></picture>
+									</div>
+									<div class="main-product__slide swiper-slide">
+										<picture><source srcset="img/product/slider_4.webp" type="image/webp"><img src="img/product/slider_4.png" alt="slide"></picture>
+									</div>
+									<div class="main-product__slide swiper-slide">
+										<picture><source srcset="img/product/slider_5.webp" type="image/webp"><img src="img/product/slider_5.png" alt="slide"></picture>
+									</div>
+									<div class="main-product__slide swiper-slide">
+										<picture><source srcset="img/product/slider_3.webp" type="image/webp"><img src="img/product/slider_3.png" alt="slide"></picture>
+									</div>
+								</div>
+							</div>
+							<div class="main-product__credit">
+								<div class="slide-homeslider__credit">
+									Кредит 0%
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product__info info-product">
+						<div class="info-product__top top-product">
+							<div class="top-product__brand">
+								<picture><source srcset="img/home/brands_1.webp" type="image/webp"><img src="img/home/brands_1.png" alt="brand"></picture>
+							</div>
+							<div class="top-product__cod">
+								<span class="top-product__gray">Код товара: </span><span class="top-product__black">44826</span>
+							</div>
+							<div class="top-product__actions">
+								<div class="slide-homeslider__icon _icon-heart slide-homeslider__icon_heart"></div>
+								<a href="#" class="slide-homeslider__icon _icon-scales"></a>
+							</div>
+						</div>
+						<div class="info-product__mid mid-product">
+							<div class="mid-product__row">
+								<div class="mid-product__oldprice">
+									<div class="slide-homeslider__old">1 125 MDL</div>
+									<div class="slide-homeslider__discount">-20%</div>
+								</div>
+							</div>
+							<div class="mid-product__row">
+								<div class="mid-product__price">
+									1 115
+									<span>MDL</span>
+								</div>
+								<div class="mid-product__stock">
+									В наличии
+									<a href="#" data-popup="#availabilityPopup">
+										в 2-х магазинах
+									</a>
+								</div>
+							</div>
+							<div class="mid-product__row">
+								<div class="mid-product__quantity">
+									<div class="quantity">
+										<button type="button" class="quantity__button quantity__button_minus"></button>
+										<div class="quantity__input">
+											<input autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<button type="button" class="quantity__button quantity__button_plus"></button>
+									</div>
+								</div>
+								<button class="mid-product__buy">Купить сейчас</button>
+							</div>
+							<div class="mid-product__row">
+								<button class="mid-product__buycredit">% Купить в кредит</button>
+							</div>
+							<div class="mid-product__row">
+								<a href="https://www.youtube.com/" class="mid-product__youtube">
+									<img src="img/product/youtube.svg" alt="link_icon">
+									<span>Видеообзор</span>
+									<img src="img/icons/seall_arrow.svg" alt="#">
+								</a>
+							</div>
+						</div>
+						<div class="info-product__bot">
+							<p class="about__gray">В связи с повышением цен на энергоресурсы и не только - цены на сайте могут быть неактуальными! Работы по обновлению цен ведутся непрерывно. Стоимость товара уточняйте у менеджера! Звоните, пишите в чате - ответим!</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="producttabs">
+				<div class="producttabs__container">
+					<div class="producttabs__body">
+						<div data-tabs class="tabs tabs-producttabs">
+							<nav data-tabs-titles class="tabs__navigation tabs-producttabs__navigation">
+								<button type="button" class="tabs__title tabs-producttabs__title _tab-active">Описание</button>
+								<button type="button" class="tabs__title tabs-producttabs__title">Отзывы <p class="about__gray">43</p></button>
+							</nav>
+							<div data-tabs-body class="tabs__content tabs-producttabs__content">
+								<div class="tabs__body tabs-producttabs__body tabs-description">
+									<div class="tabs-description__head">
+										<div class="tabs-description__title">Описание и характеристики</div>
+									</div>
+									<div class="tabs-description__body">
+										<div class="tabs-description__left">
+											<div class="tabs-description__item item-description">
+												<div class="item-description__title">Характеристики товара</div>
+												<div class="item-description__body">
+													<div class="item-description__row">
+														<div class="item-description__text item-description__text_gray">Сезон</div>
+														<div class="item-description__text">Зима</div>
+													</div>
+													<div class="item-description__row">
+														<div class="item-description__text item-description__text_gray">Ширина профиля</div>
+														<div class="item-description__text">215</div>
+													</div>
+													<div class="item-description__row">
+														<div class="item-description__text item-description__text_gray">Высота профиля</div>
+														<div class="item-description__text">65</div>
+													</div>
+													<div class="item-description__row">
+														<div class="item-description__text item-description__text_gray">Диаметр (R)</div>
+														<div class="item-description__text">R16</div>
+													</div>
+												</div>
+											</div>
+											<div class="tabs-description__item item-description">
+												<div class="item-description__title">Общие характеристики</div>
+												<div class="item-description__body">
+													<div class="item-description__row">
+														<div class="item-description__text item-description__text_gray">Сезонность</div>
+														<div class="item-description__text">зимние</div>
+													</div>
+													<div class="item-description__row">
+														<div class="item-description__text item-description__text_gray">Назначение</div>
+														<div class="item-description__text">легковые</div>
+													</div>
+												</div>
+											</div>
+											<div class="tabs-description__item item-description">
+												<div class="item-description__title">Типоразмер</div>
+												<div class="item-description__body">
+													<div class="item-description__row">
+														<div class="item-description__text item-description__text_gray">Диаметр</div>
+														<div class="item-description__text">16"</div>
+													</div>
+													<div class="item-description__row">
+														<div class="item-description__text item-description__text_gray">Ширина профиля</div>
+														<div class="item-description__text">215 мм</div>
+													</div>
+													<div class="item-description__row">
+														<div class="item-description__text item-description__text_gray">Высота профиля</div>
+														<div class="item-description__text">65 %</div>
+													</div>
+												</div>
+											</div>
+											<div class="tabs-description__item item-description">
+												<div class="item-description__title">Индексы скорости и нагрузки</div>
+												<div class="item-description__body">
+													<div class="item-description__row">
+														<div class="item-description__text item-description__text_gray">Индекс скорости</div>
+														<div class="item-description__text">T (190 км/ч)</div>
+													</div>
+													<div class="item-description__row">
+														<div class="item-description__text item-description__text_gray">Индекс нагрузки</div>
+														<div class="item-description__text">102 (850 кг)</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tabs-description__right">
+											<div class="item-description__title">Описание товара</div>
+											<p class="about__gray">Трактор JM-404 C на 40 л/с универсальный трактор для сельхоз, транспортных и коммунальных работ. Он отлично подходит для обработки земли, уборки урожая, ухода за посевами, перевозки грузов, очистки снега и других различных работ.</p>
+											<div class="item-description__media">
+												<div class="slide-videoslider__media">
+													<video src="img/home/cry.mp4" class="slide-videoslider__video" poster="img/home/poster_2.png"></video>
+													<div class="slide-videoslider__controls">
+														<img src="img/home/video_play.svg" alt="video_play">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tabs__body tabs-producttabs__body tabs-review">
+									<div class="tabs-review__top">
+										<div class="tabs-review__head">
+											<div class="tabs-review__title">Отзывы</div>
+											<div class="tabs-review__stars">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_gray.svg" alt="star">
+											</div>
+										</div>
+										<a href="#" data-popup="#reviewPopup" class="tabs-review__write">Написать отзыв</a>
+									</div>
+									<div class="tabs-review__body">
+										<div class="tabs-review__item item-review">
+											<div class="item-review__top">
+												<div class="item-review__name">Сергей</div>
+												<div class="item-review__date">05.10.2021</div>
+											</div>
+											<div class="item-review__mid">Всё пришло быстро. Упакованно хорошо. Товар классный соответствует, продавца и магазин рекомендую!!!</div>
+											<div class="item-review__bot">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_gray.svg" alt="star">
+											</div>
+										</div>
+										<div class="tabs-review__item item-review">
+											<div class="item-review__top">
+												<div class="item-review__name">Sofer</div>
+												<div class="item-review__date">17.01.2021</div>
+											</div>
+											<div class="item-review__mid">Am cumparat asa cauciucuri o luna in urma cu 1750 lei in magazinul din cahul coleso, sunt ok</div>
+											<div class="item-review__bot">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_gray.svg" alt="star">
+												<img src="img/product/star_gray.svg" alt="star">
+											</div>
+										</div>
+										<div class="tabs-review__item item-review">
+											<div class="item-review__top">
+												<div class="item-review__name">Ирина</div>
+												<div class="item-review__date">17.11.2019</div>
+											</div>
+											<div class="item-review__mid">Трактор хороший,приобрела,прадовец скидку маленькую делают. Думала и агригаты приобрести но скидки маленькие.</div>
+											<div class="item-review__bot">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_gray.svg" alt="star">
+											</div>
+										</div>
+										<div class="tabs-review__item item-review">
+											<div class="item-review__top">
+												<div class="item-review__name">Сергей</div>
+												<div class="item-review__date">05.10.2021</div>
+											</div>
+											<div class="item-review__mid">Всё пришло быстро. Упакованно хорошо. Товар классный соответствует, продавца и магазин рекомендую!!!</div>
+											<div class="item-review__bot">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_gray.svg" alt="star">
+											</div>
+										</div>
+										<div class="tabs-review__item item-review">
+											<div class="item-review__top">
+												<div class="item-review__name">Sofer</div>
+												<div class="item-review__date">17.01.2021</div>
+											</div>
+											<div class="item-review__mid">Am cumparat asa cauciucuri o luna in urma cu 1750 lei in magazinul din cahul coleso, sunt ok</div>
+											<div class="item-review__bot">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_gray.svg" alt="star">
+												<img src="img/product/star_gray.svg" alt="star">
+											</div>
+										</div>
+										<div class="tabs-review__item item-review">
+											<div class="item-review__top">
+												<div class="item-review__name">Ирина</div>
+												<div class="item-review__date">17.11.2019</div>
+											</div>
+											<div class="item-review__mid">Трактор хороший,приобрела,прадовец скидку маленькую делают. Думала и агригаты приобрести но скидки маленькие.</div>
+											<div class="item-review__bot">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_gray.svg" alt="star">
+											</div>
+										</div>
+										<div class="tabs-review__item item-review">
+											<div class="item-review__top">
+												<div class="item-review__name">Сергей</div>
+												<div class="item-review__date">05.10.2021</div>
+											</div>
+											<div class="item-review__mid">Всё пришло быстро. Упакованно хорошо. Товар классный соответствует, продавца и магазин рекомендую!!!</div>
+											<div class="item-review__bot">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_gray.svg" alt="star">
+											</div>
+										</div>
+										<div class="tabs-review__item item-review">
+											<div class="item-review__top">
+												<div class="item-review__name">Sofer</div>
+												<div class="item-review__date">17.01.2021</div>
+											</div>
+											<div class="item-review__mid">Am cumparat asa cauciucuri o luna in urma cu 1750 lei in magazinul din cahul coleso, sunt ok</div>
+											<div class="item-review__bot">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_yellow.svg" alt="star_gold">
+												<img src="img/product/star_gray.svg" alt="star">
+												<img src="img/product/star_gray.svg" alt="star">
+											</div>
+										</div>
+									</div>
+									<div class="tabs-review__pagination">
+										<div class="articles__pagination pagination-articles">
+											<div class="pagination-articles__pn">
+												<img src="img/icons/p-left.svg" alt="prev">
+												<span class="pagination-articles__span">
+													Предыдущая
+												</span>
+											</div>
+											<a href="#" class="pagination-articles__item pagination-articles__item_active">1</a>
+											<a href="#" class="pagination-articles__item">2</a>
+											<a href="#" class="pagination-articles__item">3</a>
+											<a href="#" class="pagination-articles__item">4</a>
+											<a href="#" class="pagination-articles__item">5</a>
+											<a href="#" class="pagination-articles__item">6</a>
+											<a href="#" class="pagination-articles__item">7</a>
+											<a href="#" class="pagination-articles__item">...</a>
+											<a href="#" class="pagination-articles__item">127</a>
+											<a href="#" class="pagination-articles__pn pagination-articles__pn_active">
+												<span class="pagination-articles__span">
+													Следующая
+												</span>
+												<img src="img/icons/p-right.svg" alt="next">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+			<section class="homeslider">
+				<div class="homeslider__container">
+					<div class="homeslider__head head-homeslider">
+						<div class="head-homeslider__left">
+							<div class="head-homeslider__icon">
+								<img src="img/home/recommend_star.svg" alt="recommend_star.svg">
+							</div>
+							<div class="head-homeslider__title">Рекомендуемые товары</div>
+						</div>
+						<a href="#" class="head-homeslider__seall">
+							<div>
+								Посмотреть
+							</div>
+							все
+							<span class="_icon-seall_arrow"></span>
+						</a>
+					</div>
+					<div class="homeslider__body body-homeslider">
+						<div class="body-homeslider__slider swiper">
+							<div class="body-homeslider__wrapper swiper-wrapper">
+								<article class="body-homeslider__slide slide-homeslider swiper-slide ">
+									<div class="slide-homeslider__image">
+										<picture><source srcset="img/home/recommend_1.webp" type="image/webp"><img src="img/home/recommend_1.png" alt="recommend_1.png"></picture>
+										<div class="slide-homeslider__season">
+											<img src="img/home/sun.svg" alt="sun.svg">
+											<div class="slide-homeslider__credit _dn">
+												Кредит 0%
+											</div>
+										</div>
+									</div>
+									<div class="slide-homeslider__body">
+										<div class="slide-homeslider__row">
+											<div class="slide-homeslider__name">Шины Pirelli S-Veas 215/65 R16 98H</div>
+										</div>
+										<div class="slide-homeslider__row _op0">
+											<div class="slide-homeslider__old">1 125 </div>
+											<div class="slide-homeslider__discount">-20%</div>
+										</div>
+										<div class="slide-homeslider__row">
+											<div class="slide-homeslider__price">
+												595 MDL
+											</div>
+											<div class="slide-homeslider__icons">
+												<div class="slide-homeslider__icon _icon-heart slide-homeslider__icon_heart"></div>
+												<a href="#" class="slide-homeslider__icon _icon-scales"></a>
+											</div>
+										</div>
+										<div class="slide-homeslider__row">
+											<button class="slide-homeslider__buy">Купить</button>
+										</div>
+									</div>
+								</article>
+								<article class="body-homeslider__slide slide-homeslider swiper-slide ">
+									<div class="slide-homeslider__image">
+										<picture><source srcset="img/home/recommend_2.webp" type="image/webp"><img src="img/home/recommend_2.png" alt="recommend_2.png"></picture>
+										<div class="slide-homeslider__season">
+											<img src="img/home/sun.svg" alt="sun.svg">
+											<div class="slide-homeslider__credit _dn">
+												Кредит 0%
+											</div>
+										</div>
+									</div>
+									<div class="slide-homeslider__body">
+										<div class="slide-homeslider__row">
+											<div class="slide-homeslider__name">185/65/15 Formula-Pirelli Engy XL 88 T лето</div>
+										</div>
+										<div class="slide-homeslider__row ">
+											<div class="slide-homeslider__old">1 125 MDL</div>
+											<div class="slide-homeslider__discount">-20%</div>
+										</div>
+										<div class="slide-homeslider__row">
+											<div class="slide-homeslider__price">
+												1 115 MDL
+											</div>
+											<div class="slide-homeslider__icons">
+												<div class="slide-homeslider__icon _icon-heart slide-homeslider__icon_heart"></div>
+												<a href="#" class="slide-homeslider__icon _icon-scales"></a>
+											</div>
+										</div>
+										<div class="slide-homeslider__row">
+											<button class="slide-homeslider__buy">Купить</button>
+										</div>
+									</div>
+								</article>
+								<article class="body-homeslider__slide slide-homeslider swiper-slide ">
+									<div class="slide-homeslider__image">
+										<picture><source srcset="img/home/recommend_3.webp" type="image/webp"><img src="img/home/recommend_3.png" alt="recommend_3.png"></picture>
+										<div class="slide-homeslider__season">
+											<img src="img/home/snow.svg" alt="snow.svg">
+											<div class="slide-homeslider__credit _dn">
+												Кредит 0%
+											</div>
+										</div>
+									</div>
+									<div class="slide-homeslider__body">
+										<div class="slide-homeslider__row">
+											<div class="slide-homeslider__name">Шины 195/65 R 15 Бел-337 б/к зм</div>
+										</div>
+										<div class="slide-homeslider__row _op0">
+											<div class="slide-homeslider__old">1 125 </div>
+											<div class="slide-homeslider__discount">-20%</div>
+										</div>
+										<div class="slide-homeslider__row">
+											<div class="slide-homeslider__price">
+												4 800 MDL
+											</div>
+											<div class="slide-homeslider__icons">
+												<div class="slide-homeslider__icon _icon-heart slide-homeslider__icon_heart"></div>
+												<a href="#" class="slide-homeslider__icon _icon-scales"></a>
+											</div>
+										</div>
+										<div class="slide-homeslider__row">
+											<button class="slide-homeslider__buy">Купить</button>
+										</div>
+									</div>
+								</article>
+								<article class="body-homeslider__slide slide-homeslider swiper-slide ">
+									<div class="slide-homeslider__image">
+										<picture><source srcset="img/home/recommend_4.webp" type="image/webp"><img src="img/home/recommend_4.png" alt="recommend_4.png"></picture>
+										<div class="slide-homeslider__season">
+											<picture><source srcset="img/home/" type="image/webp"><img src="img/home/" alt=""></picture>
+											<div class="slide-homeslider__credit _dn">
+												Кредит 0%
+											</div>
+										</div>
+									</div>
+									<div class="slide-homeslider__body">
+										<div class="slide-homeslider__row">
+											<div class="slide-homeslider__name">Видеорегистратор H9 Metal body</div>
+										</div>
+										<div class="slide-homeslider__row _op0">
+											<div class="slide-homeslider__old">1 125 </div>
+											<div class="slide-homeslider__discount">-20%</div>
+										</div>
+										<div class="slide-homeslider__row">
+											<div class="slide-homeslider__price">
+												830 MDL
+											</div>
+											<div class="slide-homeslider__icons">
+												<div class="slide-homeslider__icon _icon-heart slide-homeslider__icon_heart"></div>
+												<a href="#" class="slide-homeslider__icon _icon-scales"></a>
+											</div>
+										</div>
+										<div class="slide-homeslider__row">
+											<button class="slide-homeslider__buy">Купить</button>
+										</div>
+									</div>
+								</article>
+								<article class="body-homeslider__slide slide-homeslider swiper-slide _notav">
+									<div class="slide-homeslider__image">
+										<picture><source srcset="img/home/recommend_5.webp" type="image/webp"><img src="img/home/recommend_5.png" alt="recommend_5.png"></picture>
+										<div class="slide-homeslider__season">
+											<img src="img/home/sunsnow.svg" alt="sunsnow.svg">
+											<div class="slide-homeslider__credit _dn">
+												Кредит 0%
+											</div>
+										</div>
+									</div>
+									<div class="slide-homeslider__body">
+										<div class="slide-homeslider__row">
+											<div class="slide-homeslider__name">Аккумулятор Westa Standard A3 100Ah 12V</div>
+										</div>
+										<div class="slide-homeslider__row _op0">
+											<div class="slide-homeslider__old">1 125 </div>
+											<div class="slide-homeslider__discount">-20%</div>
+										</div>
+										<div class="slide-homeslider__row">
+											<div class="slide-homeslider__price">
+												3 060 MDL
+											</div>
+											<div class="slide-homeslider__icons">
+												<div class="slide-homeslider__icon _icon-heart slide-homeslider__icon_heart"></div>
+												<a href="#" class="slide-homeslider__icon _icon-scales"></a>
+											</div>
+										</div>
+										<div class="slide-homeslider__row">
+											<button class="slide-homeslider__buy">Нет в наличии</button>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="body-homeslider__navigation">
+							<div class="body-homeslider__arrow body-homeslider__arrow_prev">
+								<img src="img/icons/p-left.svg" alt="arrow">
+							</div>
+							<div class="body-homeslider__arrow body-homeslider__arrow_next">
+								<img src="img/icons/p-right.svg" alt="arrow">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="categories">
+				<div class="categories__container">
+					<div class="categories__head">
+						<div class="categories__icon">
+							<img src="img/product/categories_icon.svg" alt="icon">
+						</div>
+						<div class="categories__title">Рекомендуемые категории</div>
+					</div>
+					<div class="categories__body">
+						<div class="categories__slider swiper">
+							<div class="categories__wrapper swiper-wrapper">
+								<a href="#" class="categories__slide swiper-slide slide-categories">
+									<div class="slide-categories__image">
+										<picture><source srcset="img/product/categories_1.webp" type="image/webp"><img src="img/product/categories_1.png" alt="categories_image"></picture>
+									</div>
+									<div class="slide-categories__text">Легковые</div>
+								</a>
+								<a href="#" class="categories__slide swiper-slide slide-categories">
+									<div class="slide-categories__image">
+										<picture><source srcset="img/product/categories_2.webp" type="image/webp"><img src="img/product/categories_2.png" alt="categories_image"></picture>
+									</div>
+									<div class="slide-categories__text">Грузовые</div>
+								</a>
+								<a href="#" class="categories__slide swiper-slide slide-categories">
+									<div class="slide-categories__image">
+										<picture><source srcset="img/product/categories_3.webp" type="image/webp"><img src="img/product/categories_3.png" alt="categories_image"></picture>
+									</div>
+									<div class="slide-categories__text">Легкогрузовые</div>
+								</a>
+								<a href="#" class="categories__slide swiper-slide slide-categories">
+									<div class="slide-categories__image">
+										<picture><source srcset="img/product/categories_4.webp" type="image/webp"><img src="img/product/categories_4.png" alt="categories_image"></picture>
+									</div>
+									<div class="slide-categories__text">С/х и индустриальные</div>
+								</a>
+								<a href="#" class="categories__slide swiper-slide slide-categories">
+									<div class="slide-categories__image">
+										<picture><source srcset="img/product/categories_5.webp" type="image/webp"><img src="img/product/categories_5.png" alt="categories_image"></picture>
+									</div>
+									<div class="slide-categories__text">Шины для мотоблоков</div>
+								</a>
+							</div>
+							<div class="body-homeslider__navigation">
+								<div class="body-homeslider__arrow categories-slider__arrow_prev">
+									<img src="img/icons/p-left.svg" alt="arrow">
+								</div>
+								<div class="body-homeslider__arrow categories-slider__arrow_next">
+									<img src="img/icons/p-right.svg" alt="arrow">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<div class="about__container">
+					<div class="about__text">
+						<p class="about__gray"><span class="redStar">*</span> Вся представленная информация на сайте www.supraten.md, включая цены товаров, носит исключительно информационный характер и не является публичной офертой, определяемой положениями статей 681 и 805 Гражданского кодекса Р.М. №. 1107 .Характеристики и комплектация товара могут изменяться производителем без уведомления.</p>
+					</div>
+					<p class="about__subtitle">Актуальную информацию уточняйте у менеджера! Звоните, пишите в чате - ответим!</p>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<form action="#" data-ajax method="POST" class="footer__form form-footer">
+				<div class="form-footer__container">
+					<div class="form-footer__image">
+						<img src="img/footer/form_icon.svg" alt="form_icon">
+					</div>
+					<div class="form-footer__content">
+						<div class="form-footer__head">
+							<div class="form-footer__title">Получай скидки, будь в курсе новостей</div>
+							<div class="form-footer__subtitle">Все самое лучшее, только для вас!</div>
+						</div>
+						<div class="form-footer__body">
+							<div class="form-footer__inputs">
+								<input type="text" data-required placeholder="Имя..." class="form-footer__input">
+								<input type="tel" data-required placeholder="Телефон..." class="form-footer__input">
+								<input type="text" data-required="email" placeholder="Email..." class="form-footer__input">
+							</div>
+							<button class="form-footer__button">Подписаться</button>
+						</div>
+					</div>
+				</div>
+			</form>
+			<div class="footer__body body-footer">
+				<div class="body-footer__container">
+					<div class="body-footer__top">
+						<div class=" body-footer__col_first first-footer">
+							<div class="first-footer__logo">
+								<img src="img/footer/logo_footer.svg" alt="logo_footer">
+							</div>
+							<div class="first-footer__phone phone-footer">
+								<span class="phone-footer__icon _icon-phone"></span>
+								<a href="tel:068 685 408" class="phone-footer__body">
+									<div class="phone-footer__phone">068 685 408</div>
+									<div class="phone-footer__label _footer-gray">Онлайн-заказы</div>
+								</a>
+							</div>
+							<div class="first-footer__time time-footer">
+								<div class="time-footer__title">График работы:</div>
+								<div class="time-footer__row">Пн-Пт: 8.30 - 17.30</div>
+								<div class="time-footer__row">Суб: 9.00 - 13.00.</div>
+								<div class="time-footer__row">Воскресенье выходной</div>
+							</div>
+							<div class="first-footer__socials socials-footer">
+								<a href="#" class="socials-footer__item">
+									<img src="img/footer/socials_facebook.svg" alt="#">
+								</a>
+								<a href="#" class="socials-footer__item">
+									<img src="img/footer/socials_instagram.svg" alt="#">
+								</a>
+								<a href="#" class="socials-footer__item">
+									<img src="img/footer/socials_youtube.svg" alt="#">
+								</a>
+							</div>
+						</div>
+						<div class="body-footer__body">
+							<div class="body-footer__col col-footer">
+								<div class="col-footer__title">Информация</div>
+								<div class="col-footer__body">
+									<a href="#" class="col-footer__item">О компании</a>
+									<a href="#" class="col-footer__item">Контакты</a>
+									<a href="#" class="col-footer__item">Вакансии</a>
+									<a href="#" class="col-footer__item">Доставка</a>
+									<a href="#" class="col-footer__item">Бренды</a>
+									<a href="#" class="col-footer__item">На подарок</a>
+									<a href="#" class="col-footer__item">Подарочные сертификаты</a>
+								</div>
+							</div>
+							<div class="body-footer__col col-footer">
+								<div class="col-footer__title">Служба поддержки</div>
+								<div class="col-footer__body">
+									<a href="#" class="col-footer__item">Связаться с нами</a>
+									<a href="#" class="col-footer__item">Как проехать на склад шин</a>
+									<a href="#" class="col-footer__item">Карта сайта</a>
+									<a href="#" class="col-footer__item">Условия и положения</a>
+									<a href="#" class="col-footer__item">Политика конфиденциальности</a>
+								</div>
+							</div>
+							<div class="body-footer__col col-footer">
+								<di class="col-footer__title">Дополнительно</di v>
+								<div class="col-footer__body">
+									<a href="#" class="col-footer__item">Купить в кредит</a>
+									<a href="#" class="col-footer__item">Товары со скидкой</a>
+									<a href="#" class="col-footer__item">Акции</a>
+									<a href="#" class="col-footer__item">Новости</a>
+								</div>
+							</div>
+							<div class="body-footer__col col-footer">
+								<div class="col-footer__title">Личный кабинет</div>
+								<div class="col-footer__body">
+									<a href="#" class="col-footer__item">Мои закладки</a>
+									<a href="#" class="col-footer__item">Рассылка новостей</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="body-footer__mid mid-footer">
+						<div class="mid-footer__title _footer-gray">Наши сайты</div>
+						<div class="mid-footer__body">
+							<ul class="mid-footer__list">
+								<li class="mid-footer__item"><a href="#" class="mid-footer__link">pirelli.md</a></li>
+								<li class="mid-footer__item"><a href="#" class="mid-footer__link">salubritate.md</a></li>
+								<li class="mid-footer__item"><a href="#" class="mid-footer__link">coleso.ro</a></li>
+								<li class="mid-footer__item"><a href="#" class="mid-footer__link">korea.md</a></li>
+								<li class="mid-footer__item"><a href="#" class="mid-footer__link">cordiant.md</a></li>
+								<li class="mid-footer__item"><a href="#" class="mid-footer__link">jcbconstruct.md</a></li>
+								<li class="mid-footer__item"><a href="#" class="mid-footer__link">avtogaz.md</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="body-footer__bot bot-footer">
+						<div class="bot-footer__copy _footer-gray">Все права защищены "Coleso.md" Copyright © 2022</div>
+						<div class="bot-footer__payments payments-footer">
+							<div class="payments-footer__title _footer-gray">Принимаем к оплате</div>
+							<div class="payments-footer__item">
+								<img src="img/footer/payment_visa.svg" alt="#">
+							</div>
+							<div class="payments-footer__item">
+								<img src="img/footer/payment_mastercard.svg" alt="#">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div data-onscroll="450" data-goto=".wrapper" class="uparrow _hide">
+			<div class="uparrow__arrow">
+				<img src="img/icons/uparrow.svg" alt="uparrow">
+			</div>
+		</div>
+	</div>
+	<div id="catalog-popup" aria-hidden="true" class="popup catalog-popup">
+		<div class="popup__wrapper catalog-popup__wrapper">
+			<div class="catalog-popup__container">
+				<div class="popup__content catalog-popup__content">
+					<div class="catalog-popup__head">
+						<img src="img/icons/p-left.svg" alt="back" class="catalog-popup__back" style="display: none;">
+						<span class="catalog-popup__name">Каталог</span>
+						<button data-close type="button" class="popup__close catalog-popup__close"><span></span></button>
+					</div>
+					<div class="popup__text catalog-popup__text">
+						<div data-spollers data-one-spoller class="spollers catalog-popup__spollers spollers-catalog">
+							<div class="spollers__item spollers-catalog__item">
+								<button type="button" data-spoller class="spollers__title spollers-catalog__title">
+									<img src="img/catalog/shini.svg" alt="#" class="spollers-catalog__image"><span class="spollers-catalog__name">Шины</span><img src="img/icons/seall_arrow.svg" alt="#" class="spollers-catalog__arrow">
+								</button>
+								<div class="spollers__body spollers-catalog__body">
+									<ul class="spollers-catalog__list">
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Инструменты</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Расходные материалы для шиномонтажа</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Вентили</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Грузики</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Переходники и фиксаторы</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Пластыри и латки</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Фреон</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Оборудование для сервиса</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Домкраты</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Компрессоры</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Подъёмники</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Станки шиномонтажные</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers__item spollers-catalog__item">
+								<a href="#" type="button" class="spollers__title spollers-catalog__title">
+									<img src="img/catalog/discs.svg" alt="#" class="spollers-catalog__image"><span class="spollers-catalog__name">Диски</span>
+								</a>
+							</div>
+							<div class="spollers__item spollers-catalog__item">
+								<a href="#" type="button" class="spollers__title spollers-catalog__title">
+									<img src="img/catalog/accum.svg" alt="#" class="spollers-catalog__image"><span class="spollers-catalog__name">Аккумуляторы</span>
+								</a>
+							</div>
+							<div class="spollers__item spollers-catalog__item">
+								<button type="button" data-spoller class="spollers__title spollers-catalog__title">
+									<img src="img/catalog/masla.svg" alt="#" class="spollers-catalog__image"><span class="spollers-catalog__name">Масла и смазки</span><img src="img/icons/seall_arrow.svg" alt="#" class="spollers-catalog__arrow">
+								</button>
+								<div class="spollers__body spollers-catalog__body">
+									<ul class="spollers-catalog__list">
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Инструменты</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Расходные материалы для шиномонтажа</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Вентили</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Грузики</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Переходники и фиксаторы</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Пластыри и латки</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Фреон</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Оборудование для сервиса</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Домкраты</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Компрессоры</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Подъёмники</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Станки шиномонтажные</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers__item spollers-catalog__item">
+								<button type="button" data-spoller class="spollers__title spollers-catalog__title">
+									<img src="img/catalog/autohim.svg" alt="#" class="spollers-catalog__image"><span class="spollers-catalog__name">Автохимия</span><img src="img/icons/seall_arrow.svg" alt="#" class="spollers-catalog__arrow">
+								</button>
+								<div class="spollers__body spollers-catalog__body">
+									<ul class="spollers-catalog__list">
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Инструменты</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Расходные материалы для шиномонтажа</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Вентили</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Грузики</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Переходники и фиксаторы</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Пластыри и латки</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Фреон</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Оборудование для сервиса</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Домкраты</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Компрессоры</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Подъёмники</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Станки шиномонтажные</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers__item spollers-catalog__item">
+								<button type="button" data-spoller class="spollers__title spollers-catalog__title">
+									<img src="img/catalog/avtoaccs.svg" alt="#" class="spollers-catalog__image"><span class="spollers-catalog__name">Автоаксессуары</span><img src="img/icons/seall_arrow.svg" alt="#" class="spollers-catalog__arrow">
+								</button>
+								<div class="spollers__body spollers-catalog__body">
+									<ul class="spollers-catalog__list">
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Инструменты</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Расходные материалы для шиномонтажа</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Вентили</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Грузики</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Переходники и фиксаторы</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Пластыри и латки</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Фреон</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Оборудование для сервиса</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Домкраты</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Компрессоры</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Подъёмники</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Станки шиномонтажные</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers__item spollers-catalog__item">
+								<button type="button" data-spoller class="spollers__title spollers-catalog__title">
+									<img src="img/catalog/tech.svg" alt="#" class="spollers-catalog__image"><span class="spollers-catalog__name">Техника</span><img src="img/icons/seall_arrow.svg" alt="#" class="spollers-catalog__arrow">
+								</button>
+								<div class="spollers__body spollers-catalog__body">
+									<ul class="spollers-catalog__list">
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Инструменты</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Расходные материалы для шиномонтажа</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Вентили</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Грузики</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Переходники и фиксаторы</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Пластыри и латки</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Фреон</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Оборудование для сервиса</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Домкраты</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Компрессоры</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Подъёмники</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Станки шиномонтажные</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers__item spollers-catalog__item">
+								<button type="button" data-spoller class="spollers__title spollers-catalog__title">
+									<img src="img/catalog/selhoz.svg" alt="#" class="spollers-catalog__image"><span class="spollers-catalog__name">Сельхозтовары</span><img src="img/icons/seall_arrow.svg" alt="#" class="spollers-catalog__arrow">
+								</button>
+								<div class="spollers__body spollers-catalog__body">
+									<ul class="spollers-catalog__list">
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Инструменты</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Расходные материалы для шиномонтажа</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Вентили</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Грузики</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Переходники и фиксаторы</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Пластыри и латки</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Фреон</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Оборудование для сервиса</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Домкраты</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Компрессоры</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Подъёмники</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Станки шиномонтажные</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers__item spollers-catalog__item">
+								<button type="button" data-spoller class="spollers__title spollers-catalog__title">
+									<img src="img/catalog/hoz.svg" alt="#" class="spollers-catalog__image"><span class="spollers-catalog__name">Хозяйственные товары</span><img src="img/icons/seall_arrow.svg" alt="#" class="spollers-catalog__arrow">
+								</button>
+								<div class="spollers__body spollers-catalog__body">
+									<ul class="spollers-catalog__list">
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Инструменты</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Расходные материалы для шиномонтажа</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Вентили</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Грузики</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Переходники и фиксаторы</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Пластыри и латки</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Фреон</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Оборудование для сервиса</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Домкраты</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Компрессоры</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Подъёмники</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Станки шиномонтажные</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers__item spollers-catalog__item">
+								<button type="button" data-spoller class="spollers__title spollers-catalog__title">
+									<img src="img/catalog/oborud.svg" alt="#" class="spollers-catalog__image"><span class="spollers-catalog__name">Оборудование для сервиса</span><img src="img/icons/seall_arrow.svg" alt="#" class="spollers-catalog__arrow">
+								</button>
+								<div class="spollers__body spollers-catalog__body">
+									<ul class="spollers-catalog__list">
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Инструменты</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Расходные материалы для шиномонтажа</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Вентили</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Грузики</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Переходники и фиксаторы</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Пластыри и латки</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Фреон</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Оборудование для сервиса</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Домкраты</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Компрессоры</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Подъёмники</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Станки шиномонтажные</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers__item spollers-catalog__item">
+								<button type="button" data-spoller class="spollers__title spollers-catalog__title">
+									<img src="img/catalog/electro.svg" alt="#" class="spollers-catalog__image"><span class="spollers-catalog__name">Электротранспорт</span><img src="img/icons/seall_arrow.svg" alt="#" class="spollers-catalog__arrow">
+								</button>
+								<div class="spollers__body spollers-catalog__body">
+									<ul class="spollers-catalog__list">
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Инструменты</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Расходные материалы для шиномонтажа</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Вентили</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Грузики</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Переходники и фиксаторы</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Пластыри и латки</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Фреон</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Оборудование для сервиса</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Домкраты</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Компрессоры</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Подъёмники</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Станки шиномонтажные</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers__item spollers-catalog__item">
+								<a href="#" type="button" class="spollers__title spollers-catalog__title">
+									<img src="img/catalog/trenazh.svg" alt="#" class="spollers-catalog__image"><span class="spollers-catalog__name">Тренажеры</span>
+								</a>
+							</div>
+							<div class="spollers__item spollers-catalog__item">
+								<button type="button" data-spoller class="spollers__title spollers-catalog__title">
+									<img src="img/home/snow.svg" alt="snow" class="spollers-catalog__image spollers-catalog__image_snow"><span class="spollers-catalog__name">Зимние товары</span><img src="img/icons/seall_arrow.svg" alt="#" class="spollers-catalog__arrow">
+								</button>
+								<div class="spollers__body spollers-catalog__body">
+									<ul class="spollers-catalog__list">
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Инструменты</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Расходные материалы для шиномонтажа</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Вентили</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Грузики</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Переходники и фиксаторы</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Пластыри и латки</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Фреон</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Оборудование для сервиса</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Домкраты</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Компрессоры</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Подъёмники</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Станки шиномонтажные</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers__item spollers-catalog__item">
+								<button type="button" data-spoller class="spollers__title spollers-catalog__title">
+									<img src="img/home/sun.svg" alt="#" class="spollers-catalog__image spollers-catalog__image_sun"><span class="spollers-catalog__name">Летние товары</span><img src="img/icons/seall_arrow.svg" alt="#" class="spollers-catalog__arrow">
+								</button>
+								<div class="spollers__body spollers-catalog__body">
+									<ul class="spollers-catalog__list">
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Инструменты</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Расходные материалы для шиномонтажа</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Вентили</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Грузики</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Переходники и фиксаторы</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Пластыри и латки</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Фреон</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Оборудование для сервиса</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Домкраты</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Компрессоры</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Подъёмники</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Станки шиномонтажные</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="spollers__item spollers-catalog__item">
+								<button type="button" data-spoller class="spollers__title spollers-catalog__title">
+									<img src="img/icons/gift.svg" alt="gift" class="spollers-catalog__image spollers-catalog__image_gift"><span class="spollers-catalog__name">На подарок</span><img src="img/icons/seall_arrow.svg" alt="#" class="spollers-catalog__arrow">
+								</button>
+								<div class="spollers__body spollers-catalog__body">
+									<ul class="spollers-catalog__list">
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Инструменты</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Расходные материалы для шиномонтажа</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Вентили</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Грузики</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Переходники и фиксаторы</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Пластыри и латки</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link spollers-catalog__link_bold">Фреон</a></li>
+										<li class="spollers-catalog__li spollers-catalog__li_title">Оборудование для сервиса</li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Домкраты</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Компрессоры</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Подъёмники</a></li>
+										<li class="spollers-catalog__li"><a href="#" class="spollers-catalog__link">Станки шиномонтажные</a></li>
+									</ul>
+								</div>
+							</div>
+							<a href="#" class="spollers-catalog__speclink speclink-catalog speclink-catalog_fiat">
+								<img src="img/catalog/fiat.svg" alt="fiat" class="speclink-catalog__image">
+								<span class="speclink-catalog__text">Fiat Professional</span>
+							</a>
+							<a href="#" class="spollers-catalog__speclink speclink-catalog speclink-catalog_jcb">
+								<img src="img/catalog/jcb.svg" alt="jcb" class="speclink-catalog__image">
+								<span class="speclink-catalog__text">JCB</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="availabilityPopup" aria-hidden="true" class="popup availabilityPopup">
+		<div class="popup__wrapper availabilityPopup__wrapper">
+			<div class="popup__content availabilityPopup__content">
+				<button data-close class="filters-popup__close"><span></span></button>
+				<div class="popup__text availabilityPopup__text">
+					<div class="availabilityPopup__head">
+						<div class="availabilityPopup__title">Наличие товара в магазинах</div>
+					</div>
+					<div class="availabilityPopup__body">
+						<div class="availabilityPopup__items">
+							<div class="availabilityPopup__row availabilityPopup__row_first">
+								<div class="availabilityPopup__item">Магазин</div>
+								<div class="availabilityPopup__item">Адрес</div>
+								<div class="availabilityPopup__item">Телефон</div>
+							</div>
+							<div class="availabilityPopup__row">
+								<div class="availabilityPopup__item">Магазин Бельцы</div>
+								<div class="availabilityPopup__item">г. Бельцы, ул. Н. Йорга ,31</div>
+								<div class="availabilityPopup__item">068 92 6261</div>
+							</div>
+							<div class="availabilityPopup__row">
+								<div class="availabilityPopup__item">Магазин Кэушень</div>
+								<div class="availabilityPopup__item">г. Каушаны, ул. М. Еминеску 63</div>
+								<div class="availabilityPopup__item">069 255543</div>
+							</div>
+							<div class="availabilityPopup__row">
+								<div class="availabilityPopup__item">Магазин Хынчешть 2</div>
+								<div class="availabilityPopup__item">г. Хынчешты, ул. М. Когэлничану, 1</div>
+								<div class="availabilityPopup__item">060 668425</div>
+							</div>
+							<div class="availabilityPopup__row">
+								<div class="availabilityPopup__item">Магазин Тараклия</div>
+								<div class="availabilityPopup__item">г. Тараклия, ул. Вокзальная 71</div>
+								<div class="availabilityPopup__item">069 316660</div>
+							</div>
+							<div class="availabilityPopup__row">
+								<div class="availabilityPopup__item">Магазин Сочитень</div>
+								<div class="availabilityPopup__item">с. Сочитень, шоссе Кишинев- Хынчешты</div>
+								<div class="availabilityPopup__item">069 244417</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="reviewPopup" aria-hidden="true" class="popup reviewPopup">
+		<div class="popup__wrapper reviewPopup__wrapper">
+			<div class="popup__content reviewPopup__content">
+				<button data-close class="filters-popup__close"><span></span></button>
+				<form data-ajax action="#" method="POST" class="popup__text reviewPopup__text">
+					<div class="reviewPopup__head">
+						<div class="reviewPopup__title">Оставить отзыв</div>
+					</div>
+					<div class="rating rating_set reviewPopup__rating rating-reviewPopup">
+						<div class="rating-reviewPopup__title">Рейтинг:</div>
+						<div class="rating__body">
+							<div class="rating__active"></div>
+							<div class="rating__items">
+								<input type="radio" class="rating__item" value="1" name="rating">
+								<input type="radio" class="rating__item" value="2" name="rating">
+								<input type="radio" class="rating__item" value="3" name="rating">
+								<input type="radio" class="rating__item" value="4" name="rating">
+								<input type="radio" class="rating__item" value="5" name="rating">
+							</div>
+						</div>
+						<div class="rating__value">0</div>
+					</div>
+					<div class="reviewPopup__inputs">
+						<input placeholder="Ваше имя" type="text" name="name" class="reviewPopup__input">
+						<textarea placeholder="Ваш отзыв" name="review" class="reviewPopup__textarea"></textarea>
+					</div>
+					<div class="reviewPopup__btns">
+						<button type="submit" class="reviewPopup__btn">Продолжить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220406110928"></script>
+</body>
+
+</html>

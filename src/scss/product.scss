@@ -87,7 +87,7 @@
     img {
       width: 100%;
       object-fit: contain;
-      @include adaptiveValue("max-height", 50, 35, 992, 320, 3);
+      @include adaptiveValue("max-height", 45, 35, 992, 320, 3);
     }
     &::before{
       content:'';
