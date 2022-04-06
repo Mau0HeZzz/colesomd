@@ -132,6 +132,7 @@
 .pagination-articles {
   display: flex;
   justify-content: center;
+  align-items: center;
   @include adaptiveValue("gap", 20, 10);
   @include adaptiveValue("font-size", 16, 12);
 

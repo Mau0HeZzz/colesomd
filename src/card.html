@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Карточка товара"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_saturday.htm',{})
+			@@include('html/_header.htm',{
+				"1": "menu__link_active",
+				"2": "",
+				"3": "",
+				"4": "",
+				"5": ""
+			})
+			<main class="page page_product">
+        <section class="breadcumps">
+          <div class="breadcumps__container">
+            <div class="breadcumps__body">
+              <a href="#" class="breadcumps__item">Главная</a>
+              <a href="#" class="breadcumps__item">Шины</a>
+              <a href="#" class="breadcumps__item">Легковые</a>
+              <a href="#" class="breadcumps__item">Шины Pirelli S-Veas 215/65 R16 98H</a>
+            </div>
+          </div>
+        </section>
+        <section class="pagehead">
+          <div class="pagehead__container">
+            <h1 class="pagehead__title">Шины Pirelli S-Veas 215/65 R16 98H</h1>
+          </div>
+        </section>
+        <section class="product">
+          <div class="product__container">
+            <div class="product__slider slider-product">
+              <div class="slider-product__preview preview-product">
+                <div class="preview-product__slider swiper">
+                  <div class="preview-product__wrapper swiper-wrapper">
+                    <div class="preview-product__slide swiper-slide">
+                      <img src="@img/product/slider_1.png" alt="slide">
+                    </div>
+                    <div class="preview-product__slide swiper-slide">
+                      <img src="@img/product/slider_2.png" alt="slide">
+                    </div>
+                    <div class="preview-product__slide swiper-slide">
+                      <img src="@img/product/slider_3.png" alt="slide">
+                    </div>
+                    <div class="preview-product__slide swiper-slide">
+                      <img src="@img/product/slider_4.png" alt="slide">
+                    </div>
+                    <div class="preview-product__slide swiper-slide">
+                      <img src="@img/product/slider_5.png" alt="slide">
+                    </div>
+                    <div class="preview-product__slide swiper-slide">
+                      <img src="@img/product/slider_3.png" alt="slide">
+                    </div>
+                  </div>
+                  <div class="preview-product__navigation">
+                    <div class="preview-product__arrow preview-product__arrow_prev">
+                      <img src="@img/icons/seall_arrow.svg" alt="arrow">
+                    </div>
+                    <div class="preview-product__arrow preview-product__arrow_next">
+                      <img src="@img/icons/seall_arrow.svg" alt="arrow">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-product__main main-product">
+                <div class="main-product__slider swiper">
+                  <div class="main-product__wrapper swiper-wrapper">
+                    <div class="main-product__slide swiper-slide">
+                      <img src="@img/product/slider_1.png" alt="slide">
+                    </div>
+                    <div class="main-product__slide swiper-slide">
+                      <img src="@img/product/slider_2.png" alt="slide">
+                    </div>
+                    <div class="main-product__slide swiper-slide">
+                      <img src="@img/product/slider_3.png" alt="slide">
+                    </div>
+                    <div class="main-product__slide swiper-slide">
+                      <img src="@img/product/slider_4.png" alt="slide">
+                    </div>
+                    <div class="main-product__slide swiper-slide">
+                      <img src="@img/product/slider_5.png" alt="slide">
+                    </div>
+                    <div class="main-product__slide swiper-slide">
+                      <img src="@img/product/slider_3.png" alt="slide">
+                    </div>
+                  </div>
+                </div>
+                <div class="main-product__credit">
+                  <div class="slide-homeslider__credit">
+                    Кредит 0%
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__info info-product">
+              <div class="info-product__top top-product">
+                <div class="top-product__brand">
+                  <img src="@img/home/brands_1.png" alt="brand">
+                </div>
+                <div class="top-product__cod">
+                  <span class="top-product__gray">Код товара: </span><span class="top-product__black">44826</span>
+                </div>
+                <div class="top-product__actions">
+                  <div class="slide-homeslider__icon _icon-heart slide-homeslider__icon_heart"></div>
+                  <a href="#" class="slide-homeslider__icon _icon-scales"></a>
+                </div>
+              </div>
+              <div class="info-product__mid mid-product">
+                <div class="mid-product__row">
+                  <div class="mid-product__oldprice">
+                    <div class="slide-homeslider__old">1 125 MDL</div>
+                    <div class="slide-homeslider__discount">-20%</div>
+                  </div>
+                </div>
+                <div class="mid-product__row">
+                  <div class="mid-product__price">
+                    1 115
+                    <span>MDL</span>
+                  </div>
+                  <div class="mid-product__stock">
+                    В наличии
+                    <a href="#" data-popup="#availabilityPopup">
+                      в 2-х магазинах
+                    </a>
+                  </div>
+                </div>
+                <div class="mid-product__row">
+                  <div class="mid-product__quantity">
+                    <div class="quantity">
+                      <button type="button" class="quantity__button quantity__button_minus"></button>
+                      <div class="quantity__input">
+                        <input autocomplete="off" type="text" name="form[]" value="1">
+                      </div>
+                      <button type="button" class="quantity__button quantity__button_plus"></button>
+                    </div>
+                  </div>
+                  <button class="mid-product__buy">Купить сейчас</button>
+                </div>
+                <div class="mid-product__row">
+                  <button class="mid-product__buycredit">% Купить в кредит</button>
+                </div>
+                <div class="mid-product__row">
+                  <a href="https://www.youtube.com/" class="mid-product__youtube">
+                    <img src="@img/product/youtube.svg" alt="link_icon">
+                    <span>Видеообзор</span>
+                    <img src="@img/icons/seall_arrow.svg" alt="#">
+                  </a>
+                </div>
+              </div>
+              <div class="info-product__bot">
+                <p class="about__gray">В связи с повышением цен на энергоресурсы и не только - цены на сайте могут быть неактуальными! Работы по обновлению цен ведутся непрерывно. Стоимость товара уточняйте у менеджера! Звоните, пишите в чате - ответим!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="producttabs">
+          <div class="producttabs__container">
+            <div class="producttabs__body">
+              <div data-tabs class="tabs tabs-producttabs">
+                <nav data-tabs-titles class="tabs__navigation tabs-producttabs__navigation">
+                  <button type="button" class="tabs__title tabs-producttabs__title _tab-active">Описание</button>
+                  <button type="button" class="tabs__title tabs-producttabs__title">Отзывы <p class="about__gray">43</p></button>
+                </nav>
+                <div data-tabs-body class="tabs__content tabs-producttabs__content">
+                  <div class="tabs__body tabs-producttabs__body tabs-description">
+                    <div class="tabs-description__head">
+                      <div class="tabs-description__title">Описание и характеристики</div>
+                    </div>
+                    <div class="tabs-description__body">
+                      <div class="tabs-description__left">
+                        <div class="tabs-description__item item-description">
+                          <div class="item-description__title">Характеристики товара</div>
+                          <div class="item-description__body">
+                            <div class="item-description__row">
+                              <div class="item-description__text item-description__text_gray">Сезон</div>
+                              <div class="item-description__text">Зима</div>
+                            </div>
+                            <div class="item-description__row">
+                              <div class="item-description__text item-description__text_gray">Ширина профиля</div>
+                              <div class="item-description__text">215</div>
+                            </div>
+                            <div class="item-description__row">
+                              <div class="item-description__text item-description__text_gray">Высота профиля</div>
+                              <div class="item-description__text">65</div>
+                            </div>
+                            <div class="item-description__row">
+                              <div class="item-description__text item-description__text_gray">Диаметр (R)</div>
+                              <div class="item-description__text">R16</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tabs-description__item item-description">
+                          <div class="item-description__title">Общие характеристики</div>
+                          <div class="item-description__body">
+                            <div class="item-description__row">
+                              <div class="item-description__text item-description__text_gray">Сезонность</div>
+                              <div class="item-description__text">зимние</div>
+                            </div>
+                            <div class="item-description__row">
+                              <div class="item-description__text item-description__text_gray">Назначение</div>
+                              <div class="item-description__text">легковые</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tabs-description__item item-description">
+                          <div class="item-description__title">Типоразмер</div>
+                          <div class="item-description__body">
+                            <div class="item-description__row">
+                              <div class="item-description__text item-description__text_gray">Диаметр</div>
+                              <div class="item-description__text">16"</div>
+                            </div>
+                            <div class="item-description__row">
+                              <div class="item-description__text item-description__text_gray">Ширина профиля</div>
+                              <div class="item-description__text">215 мм</div>
+                            </div>
+                            <div class="item-description__row">
+                              <div class="item-description__text item-description__text_gray">Высота профиля</div>
+                              <div class="item-description__text">65 %</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tabs-description__item item-description">
+                          <div class="item-description__title">Индексы скорости и нагрузки</div>
+                          <div class="item-description__body">
+                            <div class="item-description__row">
+                              <div class="item-description__text item-description__text_gray">Индекс скорости</div>
+                              <div class="item-description__text">T (190 км/ч)</div>
+                            </div>
+                            <div class="item-description__row">
+                              <div class="item-description__text item-description__text_gray">Индекс нагрузки</div>
+                              <div class="item-description__text">102 (850 кг)</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tabs-description__right">
+                        <div class="item-description__title">Описание товара</div>
+                        <p class="about__gray">Трактор JM-404 C на 40 л/с  универсальный трактор для сельхоз, транспортных и коммунальных работ. Он отлично подходит для обработки земли, уборки урожая, ухода за посевами, перевозки грузов, очистки снега и других различных работ.</p>
+                        <div class="item-description__media">
+                          <div class="slide-videoslider__media">
+                            <video src="@img/home/cry.mp4" class="slide-videoslider__video" poster="@img/home/poster_2.png"></video>
+                            <div class="slide-videoslider__controls">
+                              <img src="@img/home/video_play.svg" alt="video_play">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabs__body tabs-producttabs__body tabs-review">
+                    <div class="tabs-review__top">
+                      <div class="tabs-review__head">
+                        <div class="tabs-review__title">Отзывы</div>
+                        <div class="tabs-review__stars">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_gray.svg" alt="star">
+                        </div>
+                      </div>
+                      <a href="#" data-popup="#reviewPopup" class="tabs-review__write">Написать отзыв</a>
+                    </div>
+                    <div class="tabs-review__body">
+                      <div class="tabs-review__item item-review">
+                        <div class="item-review__top">
+                          <div class="item-review__name">Сергей</div>
+                          <div class="item-review__date">05.10.2021</div>
+                        </div>
+                        <div class="item-review__mid">Всё пришло быстро. Упакованно хорошо. Товар классный соответствует, продавца и магазин рекомендую!!!</div>
+                        <div class="item-review__bot">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_gray.svg" alt="star">
+                        </div>
+                      </div>
+                      <div class="tabs-review__item item-review">
+                        <div class="item-review__top">
+                          <div class="item-review__name">Sofer</div>
+                          <div class="item-review__date">17.01.2021</div>
+                        </div>
+                        <div class="item-review__mid">Am cumparat asa cauciucuri o luna in urma cu 1750 lei in magazinul din cahul coleso, sunt ok</div>
+                        <div class="item-review__bot">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_gray.svg" alt="star">
+                          <img src="@img/product/star_gray.svg" alt="star">
+                        </div>
+                      </div>
+                      <div class="tabs-review__item item-review">
+                        <div class="item-review__top">
+                          <div class="item-review__name">Ирина</div>
+                          <div class="item-review__date">17.11.2019</div>
+                        </div>
+                        <div class="item-review__mid">Трактор хороший,приобрела,прадовец скидку маленькую делают. Думала и агригаты приобрести но скидки маленькие.</div>
+                        <div class="item-review__bot">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_gray.svg" alt="star">
+                        </div>
+                      </div>
+                      <div class="tabs-review__item item-review">
+                        <div class="item-review__top">
+                          <div class="item-review__name">Сергей</div>
+                          <div class="item-review__date">05.10.2021</div>
+                        </div>
+                        <div class="item-review__mid">Всё пришло быстро. Упакованно хорошо. Товар классный соответствует, продавца и магазин рекомендую!!!</div>
+                        <div class="item-review__bot">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_gray.svg" alt="star">
+                        </div>
+                      </div>
+                      <div class="tabs-review__item item-review">
+                        <div class="item-review__top">
+                          <div class="item-review__name">Sofer</div>
+                          <div class="item-review__date">17.01.2021</div>
+                        </div>
+                        <div class="item-review__mid">Am cumparat asa cauciucuri o luna in urma cu 1750 lei in magazinul din cahul coleso, sunt ok</div>
+                        <div class="item-review__bot">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_gray.svg" alt="star">
+                          <img src="@img/product/star_gray.svg" alt="star">
+                        </div>
+                      </div>
+                      <div class="tabs-review__item item-review">
+                        <div class="item-review__top">
+                          <div class="item-review__name">Ирина</div>
+                          <div class="item-review__date">17.11.2019</div>
+                        </div>
+                        <div class="item-review__mid">Трактор хороший,приобрела,прадовец скидку маленькую делают. Думала и агригаты приобрести но скидки маленькие.</div>
+                        <div class="item-review__bot">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_gray.svg" alt="star">
+                        </div>
+                      </div>
+                      <div class="tabs-review__item item-review">
+                        <div class="item-review__top">
+                          <div class="item-review__name">Сергей</div>
+                          <div class="item-review__date">05.10.2021</div>
+                        </div>
+                        <div class="item-review__mid">Всё пришло быстро. Упакованно хорошо. Товар классный соответствует, продавца и магазин рекомендую!!!</div>
+                        <div class="item-review__bot">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_gray.svg" alt="star">
+                        </div>
+                      </div>
+                      <div class="tabs-review__item item-review">
+                        <div class="item-review__top">
+                          <div class="item-review__name">Sofer</div>
+                          <div class="item-review__date">17.01.2021</div>
+                        </div>
+                        <div class="item-review__mid">Am cumparat asa cauciucuri o luna in urma cu 1750 lei in magazinul din cahul coleso, sunt ok</div>
+                        <div class="item-review__bot">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_yellow.svg" alt="star_gold">
+                          <img src="@img/product/star_gray.svg" alt="star">
+                          <img src="@img/product/star_gray.svg" alt="star">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tabs-review__pagination">
+                      <div class="articles__pagination pagination-articles">
+                        <div class="pagination-articles__pn">
+                          <img src="@img/icons/p-left.svg" alt="prev">
+                          <span class="pagination-articles__span">
+                            Предыдущая
+                          </span>
+                        </div>
+                        <a href="#" class="pagination-articles__item pagination-articles__item_active">1</a>
+                        <a href="#" class="pagination-articles__item">2</a>
+                        <a href="#" class="pagination-articles__item">3</a>
+                        <a href="#" class="pagination-articles__item">4</a>
+                        <a href="#" class="pagination-articles__item">5</a>
+                        <a href="#" class="pagination-articles__item">6</a>
+                        <a href="#" class="pagination-articles__item">7</a>
+                        <a href="#" class="pagination-articles__item">...</a>
+                        <a href="#" class="pagination-articles__item">127</a>
+                        <a href="#" class="pagination-articles__pn pagination-articles__pn_active">
+                          <span class="pagination-articles__span">
+                            Следующая
+                          </span>
+                          <img src="@img/icons/p-right.svg" alt="next">
+                        </a>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        @@include('html/_slider_home.htm',{
+          "icon":"recommend_star.svg",
+          "title":"Рекомендуемые товары",
+          "image_1":"recommend_1.png",
+          "season_1":"sun.svg",
+          "priceold_1": "_op0",
+          "availability_1": "",
+          "name_1": "Шины Pirelli S-Veas 215/65 R16 98H",
+          "price_1": "595 MDL",
+          "image_2":"recommend_2.png",
+          "season_2":"sun.svg",
+          "priceold_2": "",
+          "availability_2": "",
+          "name_2": "185/65/15 Formula-Pirelli Engy XL 88 T лето",
+          "price_2": "1 115 MDL",
+          "image_3":"recommend_3.png",
+          "season_3":"snow.svg",
+          "priceold_3": "_op0",
+          "availability_3": "",
+          "name_3": "Шины 195/65 R 15 Бел-337 б/к зм",
+          "price_3": "4 800 MDL",
+          "image_4":"recommend_4.png",
+          "season_4":"",
+          "priceold_4": "_op0",
+          "availability_4": "",
+          "name_4": "Видеорегистратор H9 Metal body",
+          "price_4": "830 MDL",
+          "image_5":"recommend_5.png",
+          "season_5":"sunsnow.svg",
+          "priceold_5": "_op0",
+          "availability_5": "_notav",
+          "name_5": "Аккумулятор Westa Standard A3 100Ah 12V",
+          "price_5": "3 060 MDL",
+          "credit": "_dn"
+        })
+        <section class="categories">
+          <div class="categories__container">
+            <div class="categories__head">
+              <div class="categories__icon">
+                <img src="@img/product/categories_icon.svg" alt="icon">
+              </div>
+              <div class="categories__title">Рекомендуемые категории</div>
+            </div>
+            <div class="categories__body">
+              <div class="categories__slider swiper">
+                <div class="categories__wrapper swiper-wrapper">
+                  <a href="#" class="categories__slide swiper-slide slide-categories">
+                    <div class="slide-categories__image">
+                      <img src="@img/product/categories_1.png" alt="categories_image">
+                    </div>
+                    <div class="slide-categories__text">Легковые</div>
+                  </a>
+                  <a href="#" class="categories__slide swiper-slide slide-categories">
+                    <div class="slide-categories__image">
+                      <img src="@img/product/categories_2.png" alt="categories_image">
+                    </div>
+                    <div class="slide-categories__text">Грузовые</div>
+                  </a>
+                  <a href="#" class="categories__slide swiper-slide slide-categories">
+                    <div class="slide-categories__image">
+                      <img src="@img/product/categories_3.png" alt="categories_image">
+                    </div>
+                    <div class="slide-categories__text">Легкогрузовые</div>
+                  </a>
+                  <a href="#" class="categories__slide swiper-slide slide-categories">
+                    <div class="slide-categories__image">
+                      <img src="@img/product/categories_4.png" alt="categories_image">
+                    </div>
+                    <div class="slide-categories__text">С/х и индустриальные</div>
+                  </a>
+                  <a href="#" class="categories__slide swiper-slide slide-categories">
+                    <div class="slide-categories__image">
+                      <img src="@img/product/categories_5.png" alt="categories_image">
+                    </div>
+                    <div class="slide-categories__text">Шины для мотоблоков</div>
+                  </a>
+                </div>
+                <div class="body-homeslider__navigation">
+                  <div class="body-homeslider__arrow categories-slider__arrow_prev">
+                    <img src="@img/icons/p-left.svg" alt="arrow">
+                  </div>
+                  <div class="body-homeslider__arrow categories-slider__arrow_next">
+                    <img src="@img/icons/p-right.svg" alt="arrow">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+				<section class="about">
+					<div class="about__container">
+						<div class="about__text">
+							<p class="about__gray"><span class="redStar">*</span> Вся представленная информация на сайте www.supraten.md, включая цены товаров, носит исключительно информационный характер и не является публичной офертой, определяемой положениями статей 681 и 805 Гражданского кодекса Р.М. №. 1107 .Характеристики и комплектация товара могут изменяться производителем без уведомления.</p>
+						</div>
+						<p class="about__subtitle">Актуальную информацию уточняйте у менеджера! Звоните, пишите в чате - ответим!</p>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+			@@include('html/_uparrow.htm',{})
+		</div>
+		@@include('html/_catalog_popup.htm',{})
+		@@include('html/_availability_popup.htm',{})
+		@@include('html/_review_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

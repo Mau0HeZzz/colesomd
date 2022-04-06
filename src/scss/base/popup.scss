@@ -86,7 +86,7 @@ body::after {
 			border-radius: 0px 0px rem(6) rem(6);
 			position: relative;
 			transform: translateY(-1000%) !important;
-			.popup-show & {
+			.popup_show & {
 				transform: none !important;
 			}
 		}
@@ -309,17 +309,6 @@ body::after {
 
 //========================================================================================================================================================
 
-.popup {
-
-	&__wrapper {
-	}
-
-	&__content {
-	}
-
-	&__text {
-	}
-}
 .filters-popup {
 	@media (max-width:$mobile){
 		padding: 0; 

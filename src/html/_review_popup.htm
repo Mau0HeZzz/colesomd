@@ -1,0 +1,33 @@
+<div id="reviewPopup" aria-hidden="true" class="popup reviewPopup">
+	<div class="popup__wrapper reviewPopup__wrapper">
+		<div class="popup__content reviewPopup__content">
+			<button data-close class="filters-popup__close"><span></span></button>
+			<form data-ajax action="#" method="POST" class="popup__text reviewPopup__text">
+				<div class="reviewPopup__head">
+					<div class="reviewPopup__title">Оставить отзыв</div>
+				</div>
+				<div class="rating rating_set reviewPopup__rating rating-reviewPopup">
+					<div class="rating-reviewPopup__title">Рейтинг:</div>
+					<div class="rating__body">
+						<div class="rating__active"></div>
+						<div class="rating__items">
+							<input type="radio" class="rating__item" value="1" name="rating">
+							<input type="radio" class="rating__item" value="2" name="rating">
+							<input type="radio" class="rating__item" value="3" name="rating">
+							<input type="radio" class="rating__item" value="4" name="rating">
+							<input type="radio" class="rating__item" value="5" name="rating">
+						</div>
+					</div>
+					<div class="rating__value">0</div>
+				</div>
+				<div class="reviewPopup__inputs">
+					<input placeholder="Ваше имя" type="text" name="name" class="reviewPopup__input">
+					<textarea placeholder="Ваш отзыв" name="review" class="reviewPopup__textarea"></textarea>
+				</div>
+				<div class="reviewPopup__btns">
+					<button type="submit" class="reviewPopup__btn">Продолжить</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

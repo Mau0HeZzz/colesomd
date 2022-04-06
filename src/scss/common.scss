@@ -4,7 +4,7 @@
 	.popup-show & {
 		position: relative;
     @media (min-width:$mobile){
-      z-index: 99999;
+      z-index: 999;
     }
 	}
 
@@ -192,4 +192,8 @@ input {
     color: #999;
     font-size: rem(16);
   }
+}
+
+.redStar {
+  color: $red;
 }

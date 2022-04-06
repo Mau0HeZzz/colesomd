@@ -1,0 +1,192 @@
+.cart {
+
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    @include adaptiveValue("gap", 50, 10);
+    align-items: flex-start;
+    @media (max-width:$tablet){
+      flex-direction: column;
+      align-items:stretch;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    @include adaptiveValue("gap", 50, 25);
+    
+  }
+
+  &__right {
+  }
+}
+.left-cart {
+
+  &__items {
+  }
+
+  &__promo {
+  }
+}
+.items-cart {
+
+  &__row {
+
+    &_first {
+    }
+  }
+
+  &__item {
+
+    &_img {
+    }
+
+    &_description {
+    }
+
+    &_price {
+    }
+
+    &_quantity {
+    }
+
+    &_summ {
+    }
+  }
+}
+.description-cartitem {
+}
+.description-item {
+
+  &__top {
+  }
+
+  &__bot {
+  }
+}
+.top-product {
+
+  &__gray {
+  }
+
+  &__black {
+  }
+}
+.price-cartitem {
+
+  &__act {
+  }
+
+  &__num {
+
+    &_old {
+    }
+  }
+
+  &__old {
+  }
+}
+.quantity {
+
+  &__button {
+
+    &_minus {
+    }
+
+    &_plus {
+    }
+  }
+
+  &__input {
+  }
+}
+.summ-cartitem {
+
+  &__act {
+  }
+
+  &__num {
+
+    &_old {
+    }
+  }
+
+  &__old {
+  }
+}
+.promo-cart {
+
+  &__head {
+  }
+
+  &__icon {
+  }
+
+  &__title {
+  }
+
+  &__bold {
+  }
+
+  &__thin {
+  }
+
+  &__body {
+  }
+
+  &__input {
+  }
+
+  &__btn {
+  }
+}
+.right-cart {
+
+  &__body {
+  }
+
+  &__top {
+  }
+
+  &__bot {
+  }
+
+  &__link {
+  }
+}
+.info-cart {
+
+  &__row {
+  }
+}
+.row-cartinfo {
+
+  &__left {
+  }
+
+  &__right {
+
+    &_quan {
+    }
+
+    &_summ {
+    }
+
+    &_promo {
+    }
+  }
+}
+.bot-cartinfo {
+
+  &__left {
+  }
+
+  &__right {
+
+    &_summ {
+    }
+  }
+}

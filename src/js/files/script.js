@@ -43,6 +43,30 @@ document.addEventListener('DOMContentLoaded', () => {
     if (filtersButtons.length) {
       filtersActions(filtersButtons);
     }
+    const videoContainers = document.querySelectorAll('.slide-videoslider__media');
+    if (videoContainers.length) {
+      videoContainers.forEach(e => {
+        let video = e.querySelector('.slide-videoslider__video');
+        let videoControl = e.querySelector('.slide-videoslider__controls');
+        if (videoControl) {
+          videoControl.addEventListener('click', () => {
+            videoControls(video, videoControl);
+          })
+        }
+      })
+    }
+    const jcbVideoContainers = document.querySelectorAll('.video-benefits');
+    if (jcbVideoContainers.length) {
+      jcbVideoContainers.forEach(e => {
+        let video = e.querySelector('.video-benefits__media video');
+        let videoControl = e.querySelector('.video-benefits__contor');
+        if (videoControl) {
+          videoControl.addEventListener('click', () => {
+            videoControls(video, videoControl);
+          })
+        }
+      })
+    }
   })
   const hearts = document.querySelectorAll('.slide-homeslider__icon_heart');
   if (hearts.length) {
