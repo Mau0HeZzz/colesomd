@@ -5,6 +5,10 @@
 	})
 	<body>
 		<div class="wrapper">
+      <div class="wrapper">
+        <div data-delay="1500" class="preloader">
+          <div class="preloader__load"></div>
+        </div>
 			@@include('html/_saturday.htm',{})
 			@@include('html/_header.htm',{
 				"1": "menu__link_active",
@@ -36,22 +40,22 @@
                 <div class="preview-product__slider swiper">
                   <div class="preview-product__wrapper swiper-wrapper">
                     <div class="preview-product__slide swiper-slide">
-                      <img src="@img/product/slider_1.png" alt="slide">
+                      <img src="@img/product/slider.png" alt="slide">
                     </div>
                     <div class="preview-product__slide swiper-slide">
-                      <img src="@img/product/slider_2.png" alt="slide">
+                      <img src="@img/product/electro_slider.png" alt="slide">
                     </div>
                     <div class="preview-product__slide swiper-slide">
-                      <img src="@img/product/slider_3.png" alt="slide">
+                      <img src="@img/product/slider.png" alt="slide">
                     </div>
                     <div class="preview-product__slide swiper-slide">
-                      <img src="@img/product/slider_4.png" alt="slide">
+                      <img src="@img/product/electro_slider.png" alt="slide">
                     </div>
                     <div class="preview-product__slide swiper-slide">
-                      <img src="@img/product/slider_5.png" alt="slide">
+                      <img src="@img/product/slider.png" alt="slide">
                     </div>
                     <div class="preview-product__slide swiper-slide">
-                      <img src="@img/product/slider_3.png" alt="slide">
+                      <img src="@img/product/electro_slider.png" alt="slide">
                     </div>
                   </div>
                   <div class="preview-product__navigation">
@@ -68,22 +72,22 @@
                 <div class="main-product__slider swiper">
                   <div class="main-product__wrapper swiper-wrapper">
                     <div class="main-product__slide swiper-slide">
-                      <img src="@img/product/slider_1.png" alt="slide">
+                      <img src="@img/product/slider.png" alt="slide">
                     </div>
                     <div class="main-product__slide swiper-slide">
-                      <img src="@img/product/slider_2.png" alt="slide">
+                      <img src="@img/product/electro_slider.png" alt="slide">
                     </div>
                     <div class="main-product__slide swiper-slide">
-                      <img src="@img/product/slider_3.png" alt="slide">
+                      <img src="@img/product/slider.png" alt="slide">
                     </div>
                     <div class="main-product__slide swiper-slide">
-                      <img src="@img/product/slider_4.png" alt="slide">
+                      <img src="@img/product/electro_slider.png" alt="slide">
                     </div>
                     <div class="main-product__slide swiper-slide">
-                      <img src="@img/product/slider_5.png" alt="slide">
+                      <img src="@img/product/slider.png" alt="slide">
                     </div>
                     <div class="main-product__slide swiper-slide">
-                      <img src="@img/product/slider_3.png" alt="slide">
+                      <img src="@img/product/electro_slider.png" alt="slide">
                     </div>
                   </div>
                 </div>
@@ -115,8 +119,8 @@
                   </div>
                 </div>
                 <div class="mid-product__row">
-                  <div class="mid-product__price">
-                    1 115
+                  <div class="mid-product__summ">
+                    <div class="summNumber">1 115</div>
                     <span>MDL</span>
                   </div>
                   <div class="mid-product__stock">
@@ -131,7 +135,7 @@
                     <div class="quantity">
                       <button type="button" class="quantity__button quantity__button_minus"></button>
                       <div class="quantity__input">
-                        <input autocomplete="off" type="text" name="form[]" value="1">
+                        <input data-price="1115" data-oldprice="1125" autocomplete="off" type="text" name="form[]" value="1">
                       </div>
                       <button type="button" class="quantity__button quantity__button_plus"></button>
                     </div>

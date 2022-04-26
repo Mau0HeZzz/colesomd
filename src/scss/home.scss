@@ -721,6 +721,9 @@
     display: flex;
     gap: rem(20);
     align-items: flex-start;
+    .page__body_tires  & {
+      display: block;
+    }
     @media (min-width:$mobileSmall){
       align-items: center; 
     }

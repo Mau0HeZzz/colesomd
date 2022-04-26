@@ -15,40 +15,51 @@
 	}
 }
 
-
+._icon-bankcard:before {
+  content: "\e90e";
+}
+._icon-cash:before {
+  content: "\e90f";
+}
 ._icon-cart:before {
   content: "\e900";
 }
-._icon-heart:before {
+._icon-delivery:before {
   content: "\e901";
 }
-._icon-phone:before {
+._icon-heart:before {
   content: "\e902";
 }
-._icon-p-left:before {
+._icon-phone:before {
   content: "\e903";
 }
-._icon-p-right:before {
+._icon-pickup:before {
   content: "\e904";
 }
-._icon-scales:before {
+._icon-pin:before {
   content: "\e905";
 }
-._icon-seall_arrow:before {
+._icon-p-left:before {
   content: "\e906";
 }
-._icon-search:before {
+._icon-p-right:before {
   content: "\e907";
 }
-._icon-snow:before {
+._icon-scales:before {
   content: "\e908";
 }
-._icon-sun:before {
+._icon-seall_arrow:before {
   content: "\e909";
 }
-._icon-pin:before {
+._icon-search:before {
   content: "\e90a";
 }
-
-
-
+._icon-snow:before {
+  content: "\e90b";
+}
+._icon-sun:before {
+  content: "\e90c";
+}
+._icon-truck:before {
+  content: "\e90d";
+}
