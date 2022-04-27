@@ -1,0 +1,248 @@
+.jobs {
+  @include adaptiveValue("padding-bottom", 120, 60);
+  img {
+    max-width: 100%;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    @include adaptiveValue("gap", 100, 50);
+  }
+
+  &__banner {
+  }
+
+  &__rise {
+  }
+
+  &__vacancy {
+  }
+
+  &__what {
+  }
+
+  &__how {
+  }
+
+  &__conditions {
+  }
+}
+.vacancy-jobs {
+
+  &__head {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 16, 14);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 20, 10);
+    }
+  }
+
+  &__items {
+    display: grid;
+    @include adaptiveValue("gap", 20, 10);
+    @media (min-width:$mobile){
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    @include adaptiveValue("padding", 30, 15);
+    border-radius: rem(6);
+    border: rem(1) solid #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    gap: rem(5);
+  }
+
+  &__body {
+    display: flex;
+    align-items: flex-start;
+    gap: rem(5);
+    justify-content: space-between;
+  }
+
+  &__title {
+  }
+
+  &__salary {
+    display: flex;
+    white-space: nowrap;
+    font-weight: 700;
+    @include adaptiveValue("font-size", 24, 16);
+    gap: rem(3);
+    align-items: flex-end;
+    line-height: 1;
+    span {
+      @include adaptiveValue("font-size", 16, 12);
+      @media (min-width:$mobile){
+        transform: translateY(rem(-2)); 
+      }
+    }
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+  }
+
+  &__icon {
+  }
+
+  &__city {
+    @include adaptiveValue("font-size", 16, 12);
+  }
+}
+.what-jobs {
+
+  &__head {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 50, 35);
+    }
+  }
+
+  &__items {
+    display: grid;
+    gap: rem(20);
+    @media (min-width:$mobile){
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    @include adaptiveValue("gap", 30, 15);
+  }
+
+  &__number {
+    color: #FFF0F0;
+    @include adaptiveValue("font-size", 150, 80);
+    line-height: .8;
+    font-weight: 700;
+    @include adaptiveValue("min-width", 100, 50);
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    @include adaptiveValue("gap", 20, 10);
+  }
+
+  &__title {
+    font-weight: 700;
+  }
+
+  &__text {
+  }
+}
+.how-jobs {
+
+  &__head {
+    max-width: rem(860);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 50, 35);
+    }
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+
+  &__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: rem(20);
+    @media (max-width:$mobile){
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    flex: 1 1 auto;
+    display: flex;
+    @include adaptiveValue("padding", 30, 20, 1920, 767, 1);
+    @include adaptiveValue("gap", 20, 15);
+    background-color: #fff;
+    @media (min-width:$mobile){
+      flex-direction: column;
+    }
+    @media (max-width:$mobile){
+      width: 100%;
+    }
+  }
+
+  &__icon {
+  }
+
+  &__bot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width:$mobile){
+      flex: 1 1 auto;
+    }
+  }
+
+  &__text {
+    max-width: rem(180);
+    font-weight: 700;
+    @include adaptiveValue("font-size", 18, 14, 1920, 767);
+    @media (max-width:$mobile){
+      font-size: rem(18);
+    }
+  }
+
+  &__arrow {
+    flex: 0 0 rem(30);
+    @media (max-width:$mobile){
+      transform: rotate(90deg);
+    }
+  }
+}
+.conditions-jobs {
+
+  &__head {
+    max-width: rem(735);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 50, 35);
+    }
+  }
+
+  &__title {
+  }
+
+  &__items {
+    display: grid;
+    @include adaptiveValue("gap", 50, 35);
+    @media (min-width:$mobile){
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    @include adaptiveValue("gap", 30, 15);
+  }
+
+  &__icon {
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    @include adaptiveValue("gap", 20, 10);
+  }
+
+  &__name {
+    font-weight: 700;
+  }
+
+  &__text {
+  }
+}

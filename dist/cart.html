@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220406110928">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220427122306">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,11 +25,11 @@
 			<div class="header_container">
 				<div class="header__top top-header">
 					<div class="top-header__container">
-						<div class="top-header__logo logo-header">
+						<a href="#" class="top-header__logo logo-header">
 							<button type="button" class="menu__icon icon-menu"><span></span></button>
 							<img src="img/logo.svg" alt="logo" class="logo-header__image">
 							<div class="logo-header__text">Импортер <br> шин №1</div>
-						</div>
+						</a>
 						<div class="menu__close"></div>
 						<div class="top-header__menu menu">
 							<div class="menu__logo logo-header">
@@ -138,7 +138,6 @@
 			<section class="pagehead">
 				<div class="pagehead__container">
 					<h1 class="pagehead__title">Корзина</h1>
-					<p class="pagehead__quantity">235 товаров</p>
 				</div>
 			</section>
 			<section class="cart">
@@ -154,33 +153,35 @@
 									<div class="items-cart__item items-cart__item_summ">Сумма</div>
 									<div class="items-cart__item items-cart__item_del"></div>
 								</div>
-								<div class="items-cart__row">
-									<div class="items-cart__item items-cart__item_img">
+								<div class="items-cart__row items-cart__row_withprice">
+									<div class="items-cart__item items-cart__item_img items-cart__item_img1">
 										<picture><source srcset="img/home/recommend_1.webp" type="image/webp"><img src="img/home/recommend_1.png" alt="#"></picture>
 									</div>
 									<div class="items-cart__item items-cart__item_description description-cartitem">
 										<div class="description-item__top">Шины Pirelli S-Veas 215/65 R16 98H</div>
 										<div class="description-item__bot">
-											<span class="top-product__gray">Код товара: </span><span class="top-product__black">44826</span>
+											<span class="bot-product__gray">Код товара: </span><span class="top-product__black">44826</span>
 										</div>
 									</div>
 									<div class="items-cart__item items-cart__item_price price-cartitem">
 										<div class="price-cartitem__act">
+											<span>Цена:</span>
 											<div class="price-cartitem__num">1115</div>
 											MDL
 										</div>
 									</div>
 									<div class="items-cart__item items-cart__item_quantity">
-										<div class="quantity">
+										<div class="quantity" data-da=".items-cart__item_img1, 767">
 											<button type="button" class="quantity__button quantity__button_minus"></button>
 											<div class="quantity__input">
-												<input autocomplete="off" type="text" name="form[]" value="1">
+												<input data-price="1115" autocomplete="off" type="text" name="form[]" value="1">
 											</div>
 											<button type="button" class="quantity__button quantity__button_plus"></button>
 										</div>
 									</div>
 									<div class="items-cart__item items-cart__item_summ summ-cartitem">
 										<div class="summ-cartitem__act">
+											<span>Сумма:</span>
 											<div class="summ-cartitem__num">1115</div>
 											MDL
 										</div>
@@ -189,14 +190,14 @@
 										<img src="img/product/cart_del.svg" alt="del">
 									</div>
 								</div>
-								<div class="items-cart__row">
-									<div class="items-cart__item items-cart__item_img">
+								<div class="items-cart__row items-cart__row_withprice">
+									<div class="items-cart__item items-cart__item_img items-cart__item_img2">
 										<picture><source srcset="img/home/recommend_2.webp" type="image/webp"><img src="img/home/recommend_2.png" alt="#"></picture>
 									</div>
 									<div class="items-cart__item items-cart__item_description description-cartitem">
 										<div class="description-item__top">Шины 185/65/15 Formula-Pirelli Engy XL 88 T лето</div>
 										<div class="description-item__bot">
-											<span class="top-product__gray">Код товара: </span><span class="top-product__black">44826</span>
+											<span class="bot-product__gray">Код товара: </span><span class="top-product__black">44826</span>
 										</div>
 									</div>
 									<div class="items-cart__item items-cart__item_price price-cartitem">
@@ -205,15 +206,16 @@
 											MDL
 										</div>
 										<div class="price-cartitem__act">
+											<span>Цена:</span>
 											<div class="price-cartitem__num">1115</div>
 											MDL
 										</div>
 									</div>
 									<div class="items-cart__item items-cart__item_quantity">
-										<div class="quantity">
+										<div class="quantity" data-da=".items-cart__item_img2, 767">
 											<button type="button" class="quantity__button quantity__button_minus"></button>
 											<div class="quantity__input">
-												<input autocomplete="off" type="text" name="form[]" value="1">
+												<input data-price="1115" data-oldprice="1125" autocomplete="off" type="text" name="form[]" value="1">
 											</div>
 											<button type="button" class="quantity__button quantity__button_plus"></button>
 										</div>
@@ -224,6 +226,7 @@
 											MDL
 										</div>
 										<div class="summ-cartitem__act">
+											<span>Сумма:</span>
 											<div class="summ-cartitem__num">1115</div>
 											MDL
 										</div>
@@ -232,33 +235,35 @@
 										<img src="img/product/cart_del.svg" alt="del">
 									</div>
 								</div>
-								<div class="items-cart__row">
-									<div class="items-cart__item items-cart__item_img">
-										<picture><source srcset="img/home/recommend_3.webp" type="image/webp"><img src="img/home/recommend_3.png" alt="#"></picture>
+								<div class="items-cart__row items-cart__row_withprice">
+									<div class="items-cart__item items-cart__item_img items-cart__item_img3">
+										<picture><source srcset="img/home/recommend_4.webp" type="image/webp"><img src="img/home/recommend_4.png" alt="#"></picture>
 									</div>
 									<div class="items-cart__item items-cart__item_description description-cartitem">
-										<div class="description-item__top">Видеорегистратор H9 Metal body</div>
-										<div class="description-item__bot">
-											<span class="top-product__gray">Код товара: </span><span class="top-product__black">44826</span>
+										<div class="description-cartitem__top">Видеорегистратор H9 Metal body</div>
+										<div class="description-cartitem__bot">
+											<span class="bot-product__gray">Код товара: </span><span class="top-product__black">44826</span>
 										</div>
 									</div>
 									<div class="items-cart__item items-cart__item_price price-cartitem">
 										<div class="price-cartitem__act">
+											<span>Цена:</span>
 											<div class="price-cartitem__num">1115</div>
 											MDL
 										</div>
 									</div>
 									<div class="items-cart__item items-cart__item_quantity">
-										<div class="quantity">
+										<div class="quantity" data-da=".items-cart__item_img3, 767">
 											<button type="button" class="quantity__button quantity__button_minus"></button>
 											<div class="quantity__input">
-												<input autocomplete="off" type="text" name="form[]" value="1">
+												<input data-price="1115" autocomplete="off" type="text" name="form[]" value="1">
 											</div>
 											<button type="button" class="quantity__button quantity__button_plus"></button>
 										</div>
 									</div>
 									<div class="items-cart__item items-cart__item_summ summ-cartitem">
 										<div class="summ-cartitem__act">
+											<span>Сумма:</span>
 											<div class="summ-cartitem__num">1115</div>
 											MDL
 										</div>
@@ -279,7 +284,7 @@
 									</div>
 								</div>
 								<form action="#" data-ajax method="POST" class="promo-cart__body">
-									<input type="text" placeholder="Введите промо-код" class="promo-cart__input">
+									<input type="text" data-required placeholder="Введите промо-код" class="promo-cart__input">
 									<button type="submit" class="promo-cart__btn">Применить</button>
 								</form>
 							</div>
@@ -293,7 +298,7 @@
 									</div>
 									<div class="info-cart__row row-cartinfo">
 										<div class="row-cartinfo__left">Сумма заказа</div>
-										<div class="row-cartinfo__right row-cartinfo__right_summ"><span>3820</span>MDL</div>
+										<div class="row-cartinfo__right row-cartinfo__right_summ"><span>3820</span> MDL</div>
 									</div>
 									<div class="info-cart__row row-cartinfo">
 										<div class="row-cartinfo__left">Промокод</div>
@@ -306,7 +311,7 @@
 								</div>
 								<div class="right-cart__bot bot-cartinfo">
 									<div class="bot-cartinfo__left">Итого</div>
-									<div class="bot-cartinfo__right bot-cartinfo__right_summ"><span>3810</span>MDL</div>
+									<div class="bot-cartinfo__right bot-cartinfo__right_summ"><span>3810</span> MDL</div>
 								</div>
 								<a href="checkout.html" class="right-cart__link">Оформление заказа</a>
 							</div>
@@ -737,7 +742,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220406110928"></script>
+	<script src="js/app.min.js?_v=20220427122306"></script>
 </body>
 
 </html>
