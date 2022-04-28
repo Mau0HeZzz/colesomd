@@ -1,6 +1,6 @@
 :root {
   @include adaptiveValue("--srtgd", 185, 145);
-  @include adaptiveValue("--bdsgd", 190, 95);
+  @include adaptiveValue("--bdsgd", 190, 95, 1920, 360, 1);
 }
 
 .story {
@@ -126,6 +126,7 @@
 
   &__item {
     display: flex;
+    background-color: #fff;
     flex-direction: column;
     @include adaptiveValue("padding", 30, 20);
     border-radius: rem(6);
@@ -265,6 +266,7 @@
 
   &__item {
     display: flex;
+    background-color: #fff;
     justify-content:center;align-items: center;
     padding: rem(20) rem(10);
     border-radius: rem(6);

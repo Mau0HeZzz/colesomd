@@ -1,0 +1,176 @@
+.actions {
+  @include adaptiveValue("padding-bottom", 120, 60);
+
+  &__container {
+  }
+
+  &__body {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(rem(290), rem(400)));
+    column-gap: rem(20);
+    @include adaptiveValue("row-gap", 50, 25);
+    justify-content: center;
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 50, 30);
+    }
+  }
+
+  &__pagination {
+  }
+}
+
+
+.brands {
+  @include adaptiveValue("padding-bottom", 120, 60);
+
+  &__container {
+  }
+
+  &__body {
+    display: grid;
+    justify-content: center;
+    @include adaptiveValue("gap", 20, 10, 1920, 360, 1);
+    grid-template-columns: repeat(auto-fit, var(--bdsgd));
+    align-items: center;
+  }
+
+  &__item {
+    padding: rem(12);
+    border-radius: rem(6);
+    border: rem(1) solid #e6e6e6;
+    display: flex;
+    justify-content:center;align-items: center;
+    img {
+      max-width: 90%;
+    }
+  }
+}
+
+
+.credit {
+
+  &__container {
+    display: grid;
+    @include adaptiveValue("gap", 70, 35);
+  }
+
+  &__text {
+  }
+
+  &__pluses {
+  }
+
+  &__howbuy {
+  }
+
+  &__microinvest {
+  }
+
+  &__processing {
+  }
+
+  &__bottom {
+  }
+}
+.text-credit {
+  display: flex;
+  flex-direction: column;
+  @include adaptiveValue("gap", 30, 15);
+}
+.pluses-credit {
+
+  &__head {
+  }
+
+  &__body {
+  }
+
+  &__item {
+  }
+
+  &__icon {
+  }
+
+  &__text {
+  }
+
+  &__label {
+  }
+}
+.howbuy-credit {
+
+  &__head {
+  }
+
+  &__label {
+  }
+
+  &__body {
+  }
+
+  &__list {
+  }
+
+  &__li {
+  }
+
+  &__sublist {
+  }
+
+  &__subli {
+  }
+}
+.microinvest-credit {
+
+  &__image {
+  }
+
+  &__text {
+  }
+
+  &__list {
+  }
+
+  &__li {
+  }
+
+  &__head {
+  }
+
+  &__label {
+  }
+
+  &__gray {
+  }
+}
+.redstar {
+  color: $red;
+}
+.processing-credit {
+
+  &__head {
+  }
+
+  &__item {
+  }
+
+  &__text {
+  }
+
+  &__image {
+
+    &_dsc {
+    }
+
+    &_mob {
+    }
+  }
+}
+.bottom-credit {
+
+  &__head {
+  }
+
+  &__text {
+  }
+}

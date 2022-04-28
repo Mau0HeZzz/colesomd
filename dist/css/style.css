@@ -9163,15 +9163,15 @@ input._form-error {
   }
 }
 
-@supports (--bdsgd: clamp( 5.9375rem , 3.9375rem  +  10vw , 11.875rem )) {
+@supports (--bdsgd: clamp( 5.9375rem , 4.5673076923rem  +  6.0897435897vw , 11.875rem )) {
   :root {
-    --bdsgd: clamp( 5.9375rem , 3.9375rem  +  10vw , 11.875rem );
+    --bdsgd: clamp( 5.9375rem , 4.5673076923rem  +  6.0897435897vw , 11.875rem );
   }
 }
 
-@supports not (--bdsgd: clamp( 5.9375rem , 3.9375rem  +  10vw , 11.875rem )) {
+@supports not (--bdsgd: clamp( 5.9375rem , 4.5673076923rem  +  6.0897435897vw , 11.875rem )) {
   :root {
-    --bdsgd: calc(5.9375rem + 5.9375 * (100vw - 20rem) / 59.375);
+    --bdsgd: calc(5.9375rem + 5.9375 * (100vw - 22.5rem) / 97.5);
   }
 }
 
@@ -9413,6 +9413,7 @@ input._form-error {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #fff;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -9708,6 +9709,7 @@ input._form-error {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #fff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -11110,6 +11112,109 @@ input._form-error {
   color: #FF3124;
   font-size: 1.125rem;
   line-height: 1;
+}
+
+@supports (padding-bottom: clamp( 3.75rem , 2.4868421053rem  +  6.3157894737vw , 7.5rem )) {
+  .actions {
+    padding-bottom: clamp( 3.75rem , 2.4868421053rem  +  6.3157894737vw , 7.5rem );
+  }
+}
+
+@supports not (padding-bottom: clamp( 3.75rem , 2.4868421053rem  +  6.3157894737vw , 7.5rem )) {
+  .actions {
+    padding-bottom: calc(3.75rem + 3.75 * (100vw - 20rem) / 59.375);
+  }
+}
+
+.actions__body {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.125rem, 25rem));
+  -webkit-column-gap: 1.25rem;
+     -moz-column-gap: 1.25rem;
+          column-gap: 1.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@supports (row-gap: clamp( 1.5625rem , 1.0361842105rem  +  2.6315789474vw , 3.125rem )) {
+  .actions__body {
+    row-gap: clamp( 1.5625rem , 1.0361842105rem  +  2.6315789474vw , 3.125rem );
+  }
+}
+
+@supports not (row-gap: clamp( 1.5625rem , 1.0361842105rem  +  2.6315789474vw , 3.125rem )) {
+  .actions__body {
+    row-gap: calc(1.5625rem + 1.5625 * (100vw - 20rem) / 59.375);
+  }
+}
+
+@supports (margin-bottom: clamp( 1.875rem , 1.4539473684rem  +  2.1052631579vw , 3.125rem )) {
+  .actions__body:not(:last-child) {
+    margin-bottom: clamp( 1.875rem , 1.4539473684rem  +  2.1052631579vw , 3.125rem );
+  }
+}
+
+@supports not (margin-bottom: clamp( 1.875rem , 1.4539473684rem  +  2.1052631579vw , 3.125rem )) {
+  .actions__body:not(:last-child) {
+    margin-bottom: calc(1.875rem + 1.25 * (100vw - 20rem) / 59.375);
+  }
+}
+
+@supports (padding-bottom: clamp( 3.75rem , 2.4868421053rem  +  6.3157894737vw , 7.5rem )) {
+  .brands {
+    padding-bottom: clamp( 3.75rem , 2.4868421053rem  +  6.3157894737vw , 7.5rem );
+  }
+}
+
+@supports not (padding-bottom: clamp( 3.75rem , 2.4868421053rem  +  6.3157894737vw , 7.5rem )) {
+  .brands {
+    padding-bottom: calc(3.75rem + 3.75 * (100vw - 20rem) / 59.375);
+  }
+}
+
+.brands__body {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-template-columns: repeat(auto-fit, var(--bdsgd));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@supports (gap: clamp( 0.625rem , 0.4807692308rem  +  0.641025641vw , 1.25rem )) {
+  .brands__body {
+    gap: clamp( 0.625rem , 0.4807692308rem  +  0.641025641vw , 1.25rem );
+  }
+}
+
+@supports not (gap: clamp( 0.625rem , 0.4807692308rem  +  0.641025641vw , 1.25rem )) {
+  .brands__body {
+    gap: calc(0.625rem + 0.625 * (100vw - 22.5rem) / 97.5);
+  }
+}
+
+.brands__item {
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  border: 0.0625rem solid #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brands__item img {
+  max-width: 90%;
 }
 
 .swiper {
