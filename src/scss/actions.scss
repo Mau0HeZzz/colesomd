@@ -48,6 +48,16 @@
 
 
 .credit {
+  @include adaptiveValue("padding-bottom", 120, 60);
+  @include adaptiveValue("font-size", 16, 12);
+  img {
+    max-width: 100%;
+  }
+  [class*="__head"] {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 30, 15);
+    }
+  }
 
   &__container {
     display: grid;
@@ -83,9 +93,17 @@
   }
 
   &__body {
+    display: grid;
+    @include adaptiveValue("gap", 20, 10);
+    @media (min-width:$mobile){
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__item {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
   }
 
   &__icon {
@@ -95,6 +113,10 @@
   }
 
   &__label {
+    font-weight: 700;
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 30, 15);
+    }
   }
 }
 .howbuy-credit {
@@ -103,35 +125,87 @@
   }
 
   &__label {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 30, 15);
+    }
   }
 
   &__body {
+    display: grid;
+    @include adaptiveValue("gap", 20, 10);
   }
 
   &__list {
   }
 
   &__li {
+    span {
+      font-weight: 700;
+      &:not(:last-child) {margin-bottom: rem(10);}
+      display: inline-block;
+    }
+    &::before{
+      content: "\2022";
+      color: $red;
+      font-weight: bold;
+      display: inline-block;
+      font-size: rem(18);
+    }
   }
 
   &__sublist {
+    padding-left: rem(18);
   }
 
   &__subli {
+    display: flex;
+    align-items: flex-start;
+    gap: rem(5);
+    &::before{
+      content:'-';
+      
+    }
   }
 }
 .microinvest-credit {
 
   &__image {
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 30, 15);
+    }
   }
 
   &__text {
+    &:not(:last-child) {margin-bottom: rem(20);}
+    @media (min-width:$mobileSmall){
+      span {
+        text-decoration: underline;
+      }
+    }
   }
 
   &__list {
+    display: grid;
+    gap: rem(10);
+    @media (min-width:$mobile){
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 30, 15);
+    }
   }
 
   &__li {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+    &::before{
+      content: "\2022";
+      color: $red;
+      font-weight: bold;
+      display: inline-block;
+      @include adaptiveValue("font-size", 25, 18);
+    }
   }
 
   &__head {
@@ -141,6 +215,8 @@
   }
 
   &__gray {
+    color: #999;
+    @include adaptiveValue("font-size", 14, 12);
   }
 }
 .redstar {
@@ -152,17 +228,34 @@
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    @include adaptiveValue("gap", 20, 10);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 30, 15);
+    }
   }
 
   &__text {
   }
 
   &__image {
+    img {
+      @media (max-width:$mobileSmall){
+        width: 100%;
+      }
+    }
 
     &_dsc {
+      @media (max-width:$mobileSmall){
+        display: none;
+      }
     }
 
     &_mob {
+      @media (min-width:$mobileSmall){
+        display: none;
+      }
     }
   }
 }
@@ -172,5 +265,65 @@
   }
 
   &__text {
+  }
+}
+
+.shop {
+  @include adaptiveValue("padding-bottom", 120, 60);
+
+  &__container {
+    display: grid;
+    @include adaptiveValue("gap", 70, 35);
+  }
+
+  &__top {
+    display: grid;
+    @include adaptiveValue("gap", 30, 15);
+  }
+
+  &__image {
+    img {
+      max-width: 100%;
+      @media (max-width:$mobileSmall){
+        width: 100%;
+      }
+    }
+  }
+
+  &__text {
+  }
+
+  &__subtext {
+  }
+
+  &__bot {
+    display: grid;
+    @include adaptiveValue("gap", 30, 15);
+  }
+
+  &__list {
+  }
+
+  &__li {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+    &::before{
+      content: "\2022";
+      color: $red;
+      font-weight: bold;
+      display: inline-block;
+      @include adaptiveValue("font-size", 25, 18);
+    }
+  }
+
+  &__map {
+    @include adaptiveValue("height", 600, 350);
+    @include adaptiveValue("width", 1240, 290);
+    #map {
+      width: 100%;
+      max-width: 100%;
+      height: 100%;
+    }
   }
 }

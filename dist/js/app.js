@@ -14218,6 +14218,7 @@
                 });
             };
         }));
+        var shopMap;
         document.addEventListener("DOMContentLoaded", (() => {
             let rotationChecked = document.querySelector('input[name="rotation_radio"]:checked');
             if (rotationChecked) rotationCheckedActions(rotationChecked);
@@ -14344,6 +14345,27 @@
                     summRender();
                 }));
             }));
+            ymaps.ready(init);
+            function init() {
+                let shopMapEl = document.querySelector("#map");
+                if (shopMapEl) {
+                    let coord = shopMapEl.dataset.center.trim().split(",");
+                    let zoom = shopMapEl.dataset.zoom;
+                    let geoobject = shopMapEl.dataset.geo.trim().split(",");
+                    shopMap = new ymaps.Map("map", {
+                        center: coord,
+                        zoom,
+                        controls: [ "zoomControl" ]
+                    });
+                    let shopMapGeoObject = new ymaps.GeoObject({
+                        geometry: {
+                            type: "Point",
+                            coordinates: geoobject
+                        }
+                    });
+                    shopMap.geoObjects.add(shopMapGeoObject);
+                }
+            }
         }));
         function videoControls(video, videoControl) {
             let videoVolume;

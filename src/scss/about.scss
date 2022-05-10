@@ -48,9 +48,18 @@
 .banner-story {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  .page_story & {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
   align-items: center;
   @include adaptiveValue("padding", 22, 5);
   max-width: 100%;
+  @media (max-width:$mobileSmall){
+    align-items: end;
+    .page_story & {
+      grid-template-columns: 1.4fr 0.6fr;
+    }
+  }
 
   &__text {
   }
@@ -65,9 +74,13 @@
 
   &__label {
     @include adaptiveValue("font-size", 24, 8);
+    &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 30, 8, 1920, 480, 1);
+    }
   }
 
   &__image {
+    position: relative;
     img {
       width: 100%;
     }
@@ -135,11 +148,6 @@
       gap: rem(15);
       justify-content: flex-start;
       flex-direction: row;
-      &:first-child {
-        img {
-          max-height: rem(20);
-        }
-      }
     }
   }
 
@@ -151,7 +159,7 @@
     }
     img {
       @media (max-width:$mobileSmall){
-        max-height: rem(42);
+        max-height: rem(50);
       }
     }
   }
